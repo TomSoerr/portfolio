@@ -2,16 +2,19 @@ import React, { Component } from "react";
 import { Card } from "./Card.js";
 import data from "./ProjectsData.js";
 import "./Projects.css";
+import WritingEffect from "../Effects/WritingEffect.js";
 
 const Hero = () => {
   return (
-    <div className="hero">
-      <h1 className="hero-title">Meine Projekte</h1>
+    <header className="hero">
+      <h1 className="hero-title">
+        <WritingEffect text={"Meine Projekte"}></WritingEffect>
+      </h1>
       <p className="hero-text">
         Hier findest du eine Auswahl meiner Projekte. Klicke auf "Mehr erfahren"
         um mehr über das Projekt zu erfahren.
       </p>
-    </div>
+    </header>
   );
 };
 
@@ -23,7 +26,7 @@ class Projects extends Component {
 
   render() {
     return (
-      <div>
+      <main>
         <Hero />
         <article className="card-container">
           {[...this.state.projects].map((project, index) => {
@@ -48,9 +51,9 @@ class Projects extends Component {
             );
           })}
         </article>
-      </div>
+      </main>
     );
   }
 }
 
-export { Projects };
+export default Projects;

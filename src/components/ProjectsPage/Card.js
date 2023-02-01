@@ -86,9 +86,10 @@ const Card = (props) => {
           <Image link={props.imageLink} image={props.image} />
           <div className="icons-container">
             <Name name={props.name} />
-            {props.icons.map((icon) => {
+            {props.icons.map((icon, index) => {
               return (
                 <Icon
+                  key={index}
                   link={icon.iconLink}
                   icon={icon.icon}
                   iconAlt={icon.iconAlt}
