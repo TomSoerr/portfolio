@@ -37,6 +37,7 @@
 .card-body .icons-container {
   display: flex;
   align-items: center;
+  gap: var(--gap);
 }
 
 .card-body .name {
@@ -46,8 +47,7 @@
 .card-body .icons {
   height: 1.2rem;
   width: auto;
-
-  margin: 0.25rem;
+  display: block;
 }
 
 .content-container> :not(a):not(.card-overlay) {
