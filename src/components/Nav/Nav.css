@@ -8,9 +8,13 @@ nav#nav {
   left: 0;
   width: 100%;
   z-index: 1;
+  background-color: var(--color);
+}
+
+.blub {
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
-  background-color: rgba(13, 10, 11, 0.516);
+  mix-blend-mode: difference;
 }
 
 nav#nav svg {
@@ -37,6 +41,8 @@ nav#nav ul li a {
   color: var(--background-color);
   font-size: 1rem;
   font-weight: 400;
+  font-family: 'Krona One', sans-serif;
+  font-size: 1.7rem;
 }
 
 nav#nav ul li:last-child {
@@ -45,8 +51,7 @@ nav#nav ul li:last-child {
 
 nav#nav ul li a:hover,
 nav#nav ul li a:focus {
-  background-color: transparent;
-  -webkit-backdrop-filter: blur(5px);
-  backdrop-filter: blur(5px);
+  background-color: var(--background-color);
+  color: var(--color);
 }
 
