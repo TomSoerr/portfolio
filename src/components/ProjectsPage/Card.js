@@ -29,7 +29,11 @@ const Overlay = (props) => {
   return (
     <div className={props.class}>
       <Less onClick={props.onClick} />
-      <p className="more-details">{props.moreDetails}</p>
+      <div className="more-details">
+        {props.moreDetails.map((detail, index) => (
+          <p key={index}>{detail}</p>
+        ))}
+      </div>
     </div>
   );
 };
@@ -81,26 +85,29 @@ const Card = (props) => {
 
   return (
     <CardBox>
-      {contentShown && (
-        <div className="content-container">
-          <Image link={props.imageLink} image={props.image} />
-          <div className="icons-container">
-            <Name name={props.name} />
-            {props.icons.map((icon, index) => {
-              return (
-                <Icon
-                  key={index}
-                  link={icon.iconLink}
-                  icon={icon.icon}
-                  iconAlt={icon.iconAlt}
-                />
-              );
-            })}
-          </div>
-          <Details details={props.details} />
-          <More onClick={showOverlay} />
+      <div
+        className={
+          contentShown ? "content-container" : "content-container hidden"
+        }
+      >
+        <Image link={props.imageLink} image={props.image} />
+        <div className="icons-container">
+          <Name name={props.name} />
+          {props.icons.map((icon, index) => {
+            return (
+              <Icon
+                key={index}
+                link={icon.iconLink}
+                icon={icon.icon}
+                iconAlt={icon.iconAlt}
+              />
+            );
+          })}
         </div>
-      )}
+        <Details details={props.details} />
+        <More onClick={showOverlay} />
+      </div>
+
       {overlayShown && (
         <Overlay
           class={willMove ? "card-overlay move" : "card-overlay"}

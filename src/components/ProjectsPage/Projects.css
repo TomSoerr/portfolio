@@ -1,9 +1,9 @@
 .card-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  justify-content: space-between;
   gap: 3rem;
   grid-auto-rows: auto;
-  place-items: center;
   margin: 3rem var(--page-margin);
 }
 
