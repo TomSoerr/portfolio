@@ -8,9 +8,9 @@ function Nav() {
     <nav id="nav">
       <Logo />
       <ul>
+        <NavLink name="Home" url="" />
         <NavLink name="Projekte" url="projects" />
         <NavLink name="Kontakt" url="contact" />
-        <NavLink name="Home" url="" />
       </ul>
     </nav>
   );
