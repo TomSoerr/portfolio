@@ -154,4 +154,11 @@ const data = {
   ],
 };
 
-export default data;
+const FAQ = [
+  {
+    question: "",
+    answer: "",
+  },
+];
+
+export { data as default, FAQ };

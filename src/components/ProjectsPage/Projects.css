@@ -4,7 +4,7 @@
   justify-content: space-between;
   gap: calc(var(--gap) * 3);
   grid-auto-rows: auto;
-  margin: calc(var(--gap) * 3) var(--page-margin);
+  margin: calc(var(--gap) * 6) var(--page-margin);
 }
 
 .background {
@@ -22,9 +22,6 @@
   padding: calc(var(--nav-height) + 10%) var(--page-margin) 3rem;
   background-color: var(--background-color);
   color: var(--color);
-  /* background-image: url(../public/img/test2.svg);
-  background-size: cover;
-  background-position: center; */
   mix-blend-mode: difference;
 }
 
@@ -35,16 +32,18 @@
 
 }
 
+.cta {
+  margin: calc(var(--gap) * 6) 0;
+  padding: var(--margin) var(--page-margin);
+  border-bottom: thin solid var(--border-color);
+  border-top: thin solid var(--border-color);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: calc(2 * var(--gap));
+}
 
+.cta h2 {
+  margin: 0;
+}
 
-/* Mobile */
-@media only screen and (min-width: 320px) and (max-width: 767px) {}
-
-/* Tablet */
-@media only screen and (min-width: 768px) and (max-width: 990px) {}
-
-/* Desktop */
-@media only screen and (min-width: 991px) and (max-width: 1179px) {}
-
-/* Desktop Wide */
-@media only screen and (min-width: 1180px) {}
