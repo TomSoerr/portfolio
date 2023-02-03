@@ -5,6 +5,21 @@ import "./Projects.css";
 import WritingEffect from "../Effects/WritingEffect.js";
 import "../Footer/Footer.js";
 import Footer from "../Footer/Footer.js";
+import { Link } from "react-router-dom";
+
+const CTA = () => {
+  return (
+    <article className="cta">
+      <h2 className="cta-text">
+        <div>Interessiert an einer Zusammenarbeit?</div>
+        <div>Kontaktieren Sie mich jetzt.</div>
+      </h2>
+      <Link to="/contact">
+        <button className="cta-button">Kontakt</button>
+      </Link>
+    </article>
+  );
+};
 
 const Hero = () => {
   return (
@@ -52,6 +67,7 @@ class Projects extends Component {
             );
           })}
         </article>
+        <CTA />
         <Footer></Footer>
       </main>
     );

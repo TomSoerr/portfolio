@@ -9,7 +9,7 @@ footer {
   justify-content: space-evenly;
   justify-items: center;
   align-content: center;
-
+  row-gap: var(--gap);
 }
 
 footer .icons {
@@ -28,4 +28,5 @@ footer a {
 footer p {
   grid-column: 1 / -1;
   text-align: center;
+  margin: 0;
 }
