@@ -7,7 +7,7 @@ const CardBox = (props) => {
 
 const Image = (props) => {
   return (
-    <a href={props.link}>
+    <a href={props.link} target="_blank" rel="noopener noreferrer">
       <img
         src={props.image}
         alt="Picure of the project"
@@ -40,7 +40,7 @@ const Overlay = (props) => {
 
 const Icon = (props) => {
   return (
-    <a href={props.link}>
+    <a href={props.link} target="_blank" rel="noopener noreferrer">
       <img src={props.icon} alt={props.iconAlt} className="icons"></img>
     </a>
   );
@@ -119,4 +119,4 @@ const Card = (props) => {
   );
 };
 
-export { Card };
+export { Card, Icon };

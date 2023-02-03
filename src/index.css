@@ -13,7 +13,9 @@ h1, h2 {
   --border-color: rgb(129, 129, 129);
   --border-radius: 0px;
   --background-color: rgb(252, 252, 252);
+  --background-color: rgb(255, 255, 255);
   --color: #0d0a0bff;
+  --color: rgb(0, 0, 0);
   --page-margin: 5rem; /* no % allowed */
   --margin: 2rem;
   --gap: 1rem;
@@ -59,20 +61,4 @@ body {
   background-color: var(--background-color);
 }
 
-.hero {
-  width: 100%;
-  height: 100vh;
-  padding: calc(var(--nav-height) + 10%) var(--page-margin) 3rem;
-  background-color: var(--color);
-  color: var(--background-color);
-  background-image: url(../public/img/test.svg);
-  background-size: cover;
-  background-position: center;
-}
 
-.hero .hero-title {
-  font-size: 10rem;
-  font-weight: 700;
-  margin: 0 0% 0 0;
-  mix-blend-mode: difference;
-}
