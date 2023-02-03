@@ -2,9 +2,37 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
   justify-content: space-between;
-  gap: 3rem;
+  gap: calc(var(--gap) * 3);
   grid-auto-rows: auto;
-  margin: 3rem var(--page-margin);
+  margin: calc(var(--gap) * 3) var(--page-margin);
+}
+
+.background {
+  position: absolute;
+  top: var(--nav-height);
+  left: 0;
+  width: 100%;
+  height: auto;
+  z-index: 0;
+}
+
+.hero {
+  width: 100%;
+  height: 100vh;
+  padding: calc(var(--nav-height) + 10%) var(--page-margin) 3rem;
+  background-color: var(--background-color);
+  color: var(--color);
+  /* background-image: url(../public/img/test2.svg);
+  background-size: cover;
+  background-position: center; */
+  mix-blend-mode: difference;
+}
+
+.hero h1.hero-text {
+  font-size: 14rem;
+  font-weight: 700;
+  margin: 0 0% 0 0;
+
 }
 
 

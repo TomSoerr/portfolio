@@ -3,18 +3,19 @@ import { Card } from "./Card.js";
 import data from "./ProjectsData.js";
 import "./Projects.css";
 import WritingEffect from "../Effects/WritingEffect.js";
+import "../Footer/Footer.js";
+import Footer from "../Footer/Footer.js";
 
 const Hero = () => {
   return (
-    <header className="hero">
-      <h1 className="hero-title">
-        <WritingEffect text={"Meine Projekte"}></WritingEffect>
-      </h1>
-      <p className="hero-text">
-        Hier findest du eine Auswahl meiner Projekte. Klicke auf "Mehr erfahren"
-        um mehr über das Projekt zu erfahren.
-      </p>
-    </header>
+    <div>
+      <img alt="Background" className="background" src="/img/test2.svg"></img>
+      <header className="hero">
+        <h1 className="hero-text">
+          <WritingEffect text={"Meine Projekte"}></WritingEffect>
+        </h1>
+      </header>
+    </div>
   );
 };
 
@@ -51,6 +52,7 @@ class Projects extends Component {
             );
           })}
         </article>
+        <Footer></Footer>
       </main>
     );
   }

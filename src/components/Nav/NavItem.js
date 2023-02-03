@@ -5,7 +5,9 @@ import "./Nav.css";
 function NavItem(props) {
   return (
     <li>
-      <Link to={`/${props.url}`}>{props.name}</Link>
+      <Link className={props.className} to={`/${props.url}`}>
+        {props.name}
+      </Link>
     </li>
   );
 }

@@ -56,11 +56,10 @@
 
 .card-body button.more {
   align-self: end;
-  margin: auto 1rem 1rem auto;
+  margin: auto var(--margin) var(--margin) auto;
 }
 
 .card-overlay {
-  --margin: 1.5rem;
   background-color: var(--background-color);
   color: var(--color);
   width: 100%;
@@ -130,7 +129,7 @@
 .card-overlay img.less-icon {
   height: 1.8rem;
   width: 1.8rem;
-  margin: 0.4rem;
+  margin: calc(var(--margin) / 4);
   border-radius: 50%;
 }
 
