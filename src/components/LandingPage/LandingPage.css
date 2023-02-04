@@ -1,0 +1,52 @@
+.landing-page {
+  position: relative;
+  padding-top: calc(var(--gap) * 6);
+}
+
+.landing-page h2 {
+  font-size: 1.5rem;
+  max-width: 40rem;
+}
+
+.landing-page h3 {
+  text-align: center;
+}
+
+
+.landing-page h2 span {
+  font-size: 3rem;
+  background-color: var(--color);
+  color: var(--background-color);
+
+}
+
+.landing-page .text-section:last-child h3 {
+  max-width: 40rem;
+}
+
+.text-section {
+  padding: var(--margin) var(--page-margin);
+  margin: 0 0 calc(var(--gap) * 6) 0;
+  border-bottom: thin solid var(--border-color);
+  border-top: thin solid var(--border-color);
+  display: flex;
+  flex-direction: column;
+  gap: calc(2 * var(--gap));
+  align-items: center;
+  background-color: var(--background-color);
+}
+
+.text-section p {
+  margin: 0 auto;
+  max-width: 70ch
+}
+
+.landing-page .text-section:first-child {
+  border: thin solid var(--border-color);
+  padding: var(--margin);
+  margin-left: auto;
+  margin-right: auto;
+  max-width: calc(var(--margin) * 2 + 40rem);
+
+
+}

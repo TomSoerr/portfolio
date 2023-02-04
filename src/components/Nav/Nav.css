@@ -8,14 +8,8 @@ nav#nav {
   left: 0;
   width: 100%;
   padding: 0 var(--page-margin);
-  z-index: 1;
+  z-index: 2;
   background-color: var(--color);
-}
-
-.blub {
-  -webkit-backdrop-filter: blur(10px);
-  backdrop-filter: blur(10px);
-  mix-blend-mode: difference;
 }
 
 nav#nav svg {
