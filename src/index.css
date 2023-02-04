@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@300;400&family=Krona+One&display=swap');
 
-h1, h2 {
+h1, h2, h3, h4, h5, h6 {
   font-family: 'Krona One', sans-serif;
 }
 
@@ -12,6 +12,7 @@ h1, h2 {
   --hover-color: rgb(237, 237, 237);
   --border-color: rgb(129, 129, 129);
   --border-color: rgb(0, 0, 0);
+  --color-mid: rgb(72, 72, 72);
   --border-radius: 0px;
   --background-color: rgb(255, 255, 255);
   --color: rgb(0, 0, 0);
@@ -35,7 +36,8 @@ img {
   height: auto;
 }
 
-button {
+button,
+.button {
   appearance: none;
   background: none;
   font-family: inherit;
@@ -49,10 +51,15 @@ button {
   cursor: pointer;
   transition: background-color 0.2s ease-in-out;
   margin: 0;
+  width: fit-content;
+  text-decoration: none;
+  display: block;
 }
 
 button:hover,
-button:focus {
+button:focus,
+.button:hover,
+.button:focus {
   background-color: var(--hover-color);
 }
 
@@ -62,6 +69,14 @@ body {
   background-color: var(--background-color);
 }
 
+#scroll-to {
+  /* add scroll margin */
+  scroll-margin-top: var(--nav-height);
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
 
 
 

@@ -10,6 +10,7 @@ footer {
   justify-items: center;
   align-content: center;
   row-gap: var(--gap);
+  position: relative;
 }
 
 footer .icons {
