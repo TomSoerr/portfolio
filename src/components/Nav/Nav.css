@@ -14,15 +14,17 @@ nav#nav {
 
 nav#nav svg {
   color: var(--background-color);
-  margin: calc(var(--margin) / 5) 0;
-  margin-right: auto;
+  margin: calc(var(--gap) / 2) 0;
+  height: calc(var(--nav-height) - var(--gap));
+  width: auto;
 }
 
 nav#nav ul {
-  list-style: none;
-  display: flex;
-  margin: 0;
-  padding: 0;
+  display: contents;
+}
+
+nav#nav ul li:first-of-type {
+  margin-left: auto;
 }
 
 nav#nav ul li a {
@@ -32,18 +34,15 @@ nav#nav ul li a {
   justify-content: center;
   align-items: center;
   padding: 0 calc(var(--gap) * 1.5);
-  text-decoration: none;
-  color: var(--background-color);
-  font-size: 1rem;
-  font-weight: 400;
+  font-size: 1.6rem;
   font-family: "Krona One", sans-serif;
-  font-size: 1.7rem;
 }
 
 nav#nav ul li a:hover,
 nav#nav ul li a:focus {
   background-color: var(--background-color);
   color: var(--color);
+  transition: var(--transition);
 }
 
 nav#nav a.nav-active {

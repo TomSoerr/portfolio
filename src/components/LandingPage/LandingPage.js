@@ -26,7 +26,7 @@ const LandingPage = (props) => {
           </h2>
         </Section>
         <Section>
-          <h3>Über mich</h3>
+          <h2>Über mich</h2>
           <p>
             Ich bin ein sicherer Front-End-Dev mit Schwerpunkt auf HTML/CSS. Ich
             habe auch gute Kenntnisse in JavaScript, Illustrator/InDesign und
@@ -39,7 +39,7 @@ const LandingPage = (props) => {
           </p>
         </Section>
         <Section>
-          <h3>Erfahren Sie mehr über meine Fähigkeiten und Projekte</h3>
+          <h2>Erfahren Sie mehr über meine Fähigkeiten und Projekte</h2>
           <Link className="button" to="/projects">
             Projekte
           </Link>

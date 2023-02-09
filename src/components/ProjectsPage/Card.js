@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./Card.css";
 
 const CardBox = (props) => {
-  return <article className="card-body">{props.children}</article>;
+  return <article className="project-card">{props.children}</article>;
 };
 
 const Image = (props) => {
@@ -88,7 +88,7 @@ const Card = (props) => {
     <CardBox>
       <div
         className={
-          contentShown ? "content-container" : "content-container hidden"
+          contentShown ? "project-card-content" : "project-card-content hidden"
         }
       >
         <Image link={props.imageLink} image={props.image} />
@@ -112,7 +112,9 @@ const Card = (props) => {
       {overlayShown && (
         <Overlay
           name={props.name}
-          class={willMove ? "card-overlay move" : "card-overlay"}
+          class={
+            willMove ? "project-card-overlay move" : "project-card-overlay"
+          }
           onClick={hideOverlay}
           moreDetails={props.moreDetails}
         />

@@ -4,7 +4,7 @@
   left: 0;
   width: 100%;
   height: auto;
-  z-index: 0;
+  z-index: -1;
 }
 
 .only-element {
@@ -44,14 +44,13 @@
   height: 100vh;
   padding: calc(var(--nav-height) + 10%) var(--page-margin) 3rem;
   background-color: transparent;
+  display: grid;
+  gap: calc(var(--gap) * 3);
 }
 
 .hero .hero-text {
-  font-size: 6rem;
-  font-weight: 700;
   margin: 0 0% 0 0;
   color: var(--background-color);
-  position: relative;
 }
 
 .hero .filter {
@@ -62,8 +61,5 @@
   height: 100%;
   background-color: var(--background-color);
   mix-blend-mode: difference;
-}
-
-.wrapper {
-  display: contents;
+  z-index: -1;
 }

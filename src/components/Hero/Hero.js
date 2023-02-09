@@ -11,7 +11,9 @@ const Hero = (props) => {
         <h1 className="hero-text">
           <WritingEffect text={props.headline}></WritingEffect>
         </h1>
-        {props.box && <div className="hero-box">{props.box}</div>}
+        {props.box && props.onlyElement && (
+          <div className="hero-box">{props.box}</div>
+        )}
 
         {!props.onlyElement && (
           <a className="down-arrow" href="#scroll-to">

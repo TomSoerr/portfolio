@@ -1,4 +1,4 @@
-.card-body {
+.project-card {
   background-color: var(--background-color);
   color: var(--color);
   border-radius: var(--border-radius);
@@ -6,18 +6,18 @@
   overflow: hidden;
   width: 100%;
   height: 100%;
-  position: relative;
   border: thin solid var(--border-color);
   box-shadow: var(--box-shadow);
   transition: all 0.4s ease-in-out;
+  position: relative;
 }
 
-.card-body:hover {
+.project-card:hover {
   transform: translate(var(--shadow-offset), var(--shadow-offset));
   box-shadow: var(--box-shadow-hover);
 }
 
-.content-container {
+.project-card-content {
   width: 100%;
   height: 100%;
   display: flex;
@@ -25,41 +25,41 @@
   flex-direction: column;
   background-color: var(--background-color);
 }
-.content-container.hidden {
+.project-card-content.hidden {
   visibility: hidden;
 }
 
-.card-body img {
+.project-card img {
   width: 100%;
   height: auto;
 }
 
-.card-body .icons-container {
+.project-card .icons-container {
   display: flex;
   align-items: center;
   gap: var(--gap);
 }
 
-.card-body .name {
+.project-card .name {
   margin: 0 auto 0 0;
 }
 
-.card-body .icons {
+.project-card .icons {
   height: 1.2rem;
   width: auto;
   display: block;
 }
 
-.content-container > :not(a):not(.card-overlay) {
+.project-card-content > :not(a):not(.project-card-overlay) {
   margin: 0 var(--margin);
 }
 
-.card-body button.more {
+.project-card button.more {
   align-self: end;
   margin: auto var(--margin) var(--margin) auto;
 }
 
-.card-overlay {
+.project-card-overlay {
   background-color: var(--background-color);
   color: var(--color);
   width: 100%;
@@ -74,7 +74,7 @@
   animation: moveUp 0.5s ease-in-out;
 }
 
-.card-overlay.move {
+.project-card-overlay.move {
   animation: moveDown 0.5s ease-in-out;
 }
 
@@ -96,7 +96,7 @@
   }
 }
 
-.card-overlay .more-details {
+.project-card-overlay .more-details {
   padding: 0 var(--margin);
   margin: 0;
   width: 100%;
@@ -106,20 +106,20 @@
   /* display: table; */
 }
 
-.card-overlay .more-details p {
+.project-card-overlay .more-details p {
   margin-block-start: 1em;
   margin-block-end: 1em;
 }
 
-.card-overlay .more-details :first-child {
+.project-card-overlay .more-details :first-child {
   margin-top: 0;
 }
 
-.card-overlay .more-details :last-child {
+.project-card-overlay .more-details :last-child {
   margin-bottom: 0;
 }
 
-.card-overlay button {
+.project-card-overlay button {
   top: calc(-1.2 * var(--margin));
   right: 0;
   border: none;
@@ -128,14 +128,15 @@
   background-color: transparent;
 }
 
-.card-overlay button:hover .less-icon,
-.card-overlay button:focus .less-icon {
+.project-card-overlay button:hover .less-icon,
+.project-card-overlay button:focus .less-icon {
   background-color: var(--hover-color);
 }
 
-.card-overlay img.less-icon {
+.project-card-overlay img.less-icon {
   height: 1.8rem;
   width: 1.8rem;
   margin: calc(var(--margin) / 4);
   border-radius: 50%;
+  transition: var(--transition);
 }

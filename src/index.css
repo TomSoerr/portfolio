@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@300&family=Krona+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@300;600&family=Krona+One&display=swap");
 
 h1,
 h2,
@@ -7,6 +7,15 @@ h4,
 h5,
 h6 {
   font-family: "Krona One", sans-serif;
+}
+
+h1 {
+  font-size: 6rem;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 1.6rem;
 }
 
 :root {
@@ -18,6 +27,7 @@ h6 {
   --hover-color: rgb(237, 237, 237);
   --border-color: rgb(0, 0, 0);
   --color-mid: rgb(72, 72, 72);
+  --secondary-color: rgb(104, 55, 218);
   --border-radius: 0px;
   --background-color: rgb(255, 255, 255);
   --color: rgb(0, 0, 0);
@@ -27,6 +37,8 @@ h6 {
   /* space between to siblings */
   --gap: 1rem;
   --nav-height: 4.5rem;
+  --scale: scale(1.05);
+  --transition: all 0.2s ease-in-out;
   font-family: "Hanken Grotesk", -apple-system, BlinkMacSystemFont, "Segoe UI",
     "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
     "Helvetica Neue", sans-serif;
@@ -55,14 +67,23 @@ button,
   background-color: var(--background-color);
   color: var(--color);
   border: thin solid var(--border-color);
-  padding: 0.5rem 1.5rem;
+  padding: 0.5em 1.5em;
   border-radius: var(--border-radius);
   cursor: pointer;
-  transition: background-color 0.2s ease-in-out;
+  transition: var(--transition);
   margin: 0;
   width: fit-content;
   text-decoration: none;
   display: block;
+}
+
+:not(.project-card-content):not(.project-card-overlay) > button,
+:not(.project-card-overlay) .button {
+  background-color: var(--secondary-color);
+  color: var(--background-color);
+  font-size: 1.5rem;
+  font-weight: 600;
+  border: none;
 }
 
 button:hover,
@@ -70,6 +91,25 @@ button:focus,
 .button:hover,
 .button:focus {
   background-color: var(--hover-color);
+}
+
+:not(.project-card-content):not(.project-card-overlay) > button:hover,
+:not(.project-card-content):not(.project-card-overlay) > button:focus,
+.button:focus,
+.button:hover {
+  transform: var(--scale);
+  background-color: var(--secondary-color);
+  filter: hue-rotate(-20deg);
+  color: var(--background-color);
+}
+
+img.icons {
+  transition: var(--transition);
+}
+
+img.icons:hover,
+img.icons:focus {
+  transform: var(--scale);
 }
 
 body {
@@ -91,6 +131,23 @@ h4,
 h5,
 h6 {
   margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--background-color);
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.wrapper {
+  display: contents;
 }
 
 /* Mobile */

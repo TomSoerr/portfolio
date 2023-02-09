@@ -1,50 +1,55 @@
 import React from "react";
-import WritingEffect from "../Effects/WritingEffect";
 import "./ContactPage.css";
 import Hero from "../Hero/Hero.js";
 
-function ContactPage(props) {
+const ContactElement = (props) => {
+  return (
+    <li>
+      <a className="button" href={props.link}>
+        {props.platform}
+      </a>
+    </li>
+  );
+};
+
+const ContactPage = (props) => {
   return (
     <main className="only-element">
       <Hero
         box={
-          <div>
-            <h1 className="hero-title">
-              <WritingEffect text={"Kontakt Seite"}></WritingEffect>
-            </h1>
-            <table>
-              <thead>
-                <tr>
-                  <th>Information</th>
-                  <th>Details</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>Email</td>
-                  <td>example@email.com</td>
-                </tr>
-                <tr>
-                  <td>Phone Number</td>
-                  <td>(123) 456-7890</td>
-                </tr>
-                <tr>
-                  <td>GitHub</td>
-                  <td>github.com/example</td>
-                </tr>
-                <tr>
-                  <td>Instagram</td>
-                  <td>@example</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
+          <ul className="contact-box">
+            {[
+              {
+                platform: "Xing",
+                link: "https://www.xing.com/profile/Tom_Soerr/cv",
+              },
+              {
+                platform: "GitHub",
+                link: "https://github.com/TomSoerr",
+              },
+              {
+                platform: "LinkedIn",
+                link: "https://www.linkedin.com/in/tom-soerr-b5707a265/",
+              },
+              {
+                platform: "E-Mail",
+                link: "mailto:tomix2004@gmail.com",
+              },
+            ].map((contact, index) => (
+              <ContactElement
+                key={index}
+                platform={contact.platform}
+                contact={contact.contact}
+                link={contact.link}
+              />
+            ))}
+          </ul>
         }
         onlyElement={true}
         headline="Lassen Sie uns Kontakt aufnehmen."
       />
     </main>
   );
-}
+};
 
 export default ContactPage;

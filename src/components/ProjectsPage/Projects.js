@@ -31,7 +31,7 @@ class Projects extends Component {
     return (
       <main>
         <Hero headline="Meine Projekte" />
-        <article id="scroll-to" className="card-container">
+        <article id="scroll-to" className="project-card-container">
           {[...this.state.projects].map((project, index) => {
             let name = project.name;
             let details = project.details;
