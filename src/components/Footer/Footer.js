@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <footer className="footer">
       <Icon
-        link="https://www.linkedin.com/"
+        link="https://www.linkedin.com/in/tom-soerr-b5707a265/"
         icon="/img/linkedin.svg"
         iconAlt="linkedin icon"
       />

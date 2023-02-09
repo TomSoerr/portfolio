@@ -4,7 +4,7 @@ import "./Hero.css";
 
 const Hero = (props) => {
   return (
-    <div>
+    <div className="wrapper">
       <img alt="Background" className="hero-bg" src="/img/test3.svg"></img>
       <header className="hero">
         <div className="filter"></div>

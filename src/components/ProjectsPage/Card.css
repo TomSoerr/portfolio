@@ -50,7 +50,7 @@
   display: block;
 }
 
-.content-container> :not(a):not(.card-overlay) {
+.content-container > :not(a):not(.card-overlay) {
   margin: 0 var(--margin);
 }
 
@@ -70,7 +70,7 @@
   border-top: calc(var(--margin) * 1.2) solid var(--background-color);
   border-bottom: calc(var(--margin) * 1.2) solid var(--background-color);
   border-radius: var(--border-radius);
-
+  display: block;
   animation: moveUp 0.5s ease-in-out;
 }
 
@@ -102,6 +102,13 @@
   width: 100%;
   height: 100%;
   overflow: scroll;
+  /* Chrome padding bug */
+  /* display: table; */
+}
+
+.card-overlay .more-details p {
+  margin-block-start: 1em;
+  margin-block-end: 1em;
 }
 
 .card-overlay .more-details :first-child {
@@ -122,7 +129,7 @@
 }
 
 .card-overlay button:hover .less-icon,
-.card-overlay button:focus .less-icon{
+.card-overlay button:focus .less-icon {
   background-color: var(--hover-color);
 }
 
@@ -132,4 +139,3 @@
   margin: calc(var(--margin) / 4);
   border-radius: 50%;
 }
-
