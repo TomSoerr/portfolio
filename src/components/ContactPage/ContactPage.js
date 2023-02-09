@@ -46,7 +46,7 @@ const ContactPage = (props) => {
           </ul>
         }
         onlyElement={true}
-        headline="Lassen Sie uns Kontakt aufnehmen."
+        headline="Kontaktieren Sie mich!"
       />
     </main>
   );
