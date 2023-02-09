@@ -31,7 +31,7 @@ const data = {
         "Der Code sowie eine Live-Preview des Projekts sind auf meinem GitHub-Profil verfügbar. Interessierte können dort auch weitere Projekte von mir einsehen sowie einen zeitlichen Verlauf meiner Commits verfolgen. Ich bin stolz darauf, eine flexible und responsive Webseite mit CSS Grid erstellt zu haben, da es meiner Begeisterung für Webentwicklung entspricht.",
       ],
       imageLink: "https://tomsoerr.github.io/odin-admin-dashboard/",
-      image: "/img/adminDashboard.png",
+      image: "/img/admin-dashboard.jpg",
       icons: createIcons(
         "https://github.com/TomSoerr/odin-admin-dashboard",
         "https://tomsoerr.github.io/odin-admin-dashboard/"
@@ -99,7 +99,7 @@ const data = {
         "Außerdem habe ich mit Python einen „Makro Rekorder“ geschrieben, der die Maus und Tastatur aufzeichnet, indem die Aufzeichnungen abgespeichert werden können. Das UI habe ich mit Tkinter erstellt, welches auf den meisten Betriebssystemen läuft. Leider funktioniert für Aufzeichnungen die verwendete Library nur mit Windows. Ebenso gibt es die Möglichkeit, dass eine andere Python Anwendung die Aufzeichnungen einfach abspielen kann ohne die UI. (siehe Code auf Github)",
       ],
       imageLink: "https://github.com/TomSoerr/freeCodeCamp-Projects",
-      image: "/img/yolov5.png",
+      image: "/img/yolov5.jpg",
       icons: createIcons(
         "https://github.com/TomSoerr/macro-recorder",
         "https://www.freecodecamp.org/certification/tom-soerr/scientific-computing-with-python-v7"
@@ -115,7 +115,7 @@ const data = {
         "Zu Beginn suchte ich mir passend zum Thema eine Rebellin aus.  Im nächsten Schritt habe ich für die Logoentwicklung ein Moodboard erstellt, dann mithilfe einer morphologischen Matrix erste Skizzen für das Logo gezeichnet und diese dann in Illustrator weiter ausgeführt. Mit dem von mir gesammelten Material habe ich das Plakat in InDesign zusammengestellt und für die Bildbearbeitung Photoshop benutzt.",
       ],
       imageLink: "/img/poster.pdf",
-      image: "/img/poster-half.png",
+      image: "/img/poster-half.jpg",
       icons: [],
     },
     {
@@ -142,7 +142,7 @@ const data = {
         "Im Rahmen des Odin Kurses habe ich noch viele weitere Projekte umgesetzt. Diese sind alle auf Github zu finden. Außerdem habe ich noch ein paar weitere Projekte, die ich nicht im Rahmen des Kurses gemacht habe. Diese sind ebenfalls auf Github zu finden.",
       ],
       imageLink: "https://github.com/TomSoerr",
-      image: "/img/github-logo.png",
+      image: "/img/github.png",
       icons: [
         {
           iconLink: "https://github.com/TomSoerr",

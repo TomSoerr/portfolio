@@ -30,6 +30,7 @@ const Overlay = (props) => {
     <div className={props.class}>
       <Less onClick={props.onClick} />
       <div className="more-details">
+        <h2>{props.name}</h2>
         {props.moreDetails.map((detail, index) => (
           <p key={index}>{detail}</p>
         ))}
@@ -110,6 +111,7 @@ const Card = (props) => {
 
       {overlayShown && (
         <Overlay
+          name={props.name}
           class={willMove ? "card-overlay move" : "card-overlay"}
           onClick={hideOverlay}
           moreDetails={props.moreDetails}

@@ -64,9 +64,6 @@
   mix-blend-mode: difference;
 }
 
-
-.blub {
-  -webkit-backdrop-filter: blur(10px);
-  backdrop-filter: blur(10px);
-  mix-blend-mode: difference;
+.wrapper {
+  display: contents;
 }

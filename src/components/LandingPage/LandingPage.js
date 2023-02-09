@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import Hero from "../Hero/Hero.js";
 import Footer from "../Footer/Footer.js";
 import "./LandingPage.css";
-import { useRef } from "react";
 
 const Section = (props) => {
   return (
