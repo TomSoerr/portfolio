@@ -1,21 +1,45 @@
 import React, { useState, useEffect } from "react";
 
 function WritingEffect({ text }) {
-  const [displayedText, setDisplayedText] = useState("");
+  const [index, setIndex] = useState(0);
+  const [displayedText, setDisplayedText] = useState(
+    <div>
+      <span>{text.slice(index)}</span>
+    </div>
+  );
 
   useEffect(() => {
-    let i = 0;
-    const intervalId = setInterval(() => {
-      setDisplayedText(text.slice(0, i));
-      i++;
-      if (i > text.length) {
-        clearInterval(intervalId);
+    let timeout;
+    if (index < text.length) {
+      if (text[index] === " ") {
+        timeout = setTimeout(() => {
+          setDisplayedText(
+            <div>
+              {text.slice(0, index + 1)}
+              <span>{text.slice(index)}</span>
+            </div>
+          );
+          setIndex(index + 1);
+        }, 2000);
+      } else {
+        timeout = setTimeout(() => {
+          setDisplayedText(
+            <div>
+              {text.slice(0, index + 1)}
+              <span>{text.slice(index + 1)}</span>
+            </div>
+          );
+          setIndex(index + 1);
+        }, 1000);
       }
-    }, 100);
-    return () => clearInterval(intervalId);
-  }, [text]);
+    }
 
-  return <div>{displayedText}</div>;
+    return () => {
+      clearTimeout(timeout);
+    };
+  }, [displayedText, index, text]);
+
+  return <h1 className="hero-text">{displayedText}</h1>;
 }
 
 export default WritingEffect;
