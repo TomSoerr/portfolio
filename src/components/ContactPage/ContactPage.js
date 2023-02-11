@@ -5,7 +5,12 @@ import Hero from "../Hero/Hero.js";
 const ContactElement = (props) => {
   return (
     <li>
-      <a className="button" href={props.link}>
+      <a
+        className="button"
+        href={props.link}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         {props.platform}
       </a>
     </li>
