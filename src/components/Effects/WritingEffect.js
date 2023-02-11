@@ -20,7 +20,7 @@ function WritingEffect({ text }) {
             </div>
           );
           setIndex(index + 1);
-        }, 2000);
+        }, 200);
       } else {
         timeout = setTimeout(() => {
           setDisplayedText(
@@ -30,7 +30,7 @@ function WritingEffect({ text }) {
             </div>
           );
           setIndex(index + 1);
-        }, 1000);
+        }, 100);
       }
     }
 
