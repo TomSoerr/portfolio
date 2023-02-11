@@ -72,6 +72,10 @@
   grid-area: h1;
 }
 
+.hero .hero-text span {
+  opacity: 0;
+}
+
 .hero .hero-box {
   grid-area: box;
 }

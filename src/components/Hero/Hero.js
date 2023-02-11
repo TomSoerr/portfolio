@@ -8,9 +8,7 @@ const Hero = (props) => {
       <img alt="Background" className="hero-bg" src="/img/test3.svg"></img>
       <header className="hero">
         <div className="filter"></div>
-        <h1 className="hero-text">
-          <WritingEffect text={props.headline}></WritingEffect>
-        </h1>
+        <WritingEffect text={props.headline}></WritingEffect>
         {props.box && props.onlyElement && (
           <div className="hero-box">{props.box}</div>
         )}
