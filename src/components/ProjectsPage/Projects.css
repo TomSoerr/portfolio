@@ -8,7 +8,7 @@
 }
 
 .cta {
-  margin: 0 0 calc(var(--gap) * 6) 0;
+  margin-bottom: calc(var(--gap) * 6);
   padding: var(--margin) var(--page-margin);
   border-bottom: thin solid var(--border-color);
   border-top: thin solid var(--border-color);

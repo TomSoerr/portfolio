@@ -1,13 +1,14 @@
 .landing-page {
-  padding-top: calc(var(--gap) * 6);
-}
+  padding: calc(var(--gap) * 6) var(--page-margin);
+  display: grid;
+  grid:
+    "header header header header . ."
+    ". . text text text text"
+    ". cta cta cta cta ."
+    / 1fr 1fr 0.5fr 0.5fr 1fr 1fr;
 
-.landing-page h2 {
-  max-width: 40rem;
-}
-
-.landing-page h2 {
-  text-align: center;
+  /* grid-template-columns: repeat(6, 1fr); */
+  row-gap: calc(var(--gap) * 3);
 }
 
 .landing-page h2 span {
@@ -16,31 +17,31 @@
   color: var(--background-color);
 }
 
-.landing-page .text-section:last-child h3 {
-  max-width: 40rem;
-}
-
 .text-section {
-  padding: var(--margin) var(--page-margin);
-  margin: 0 0 calc(var(--gap) * 6) 0;
-  border-bottom: thin solid var(--border-color);
-  border-top: thin solid var(--border-color);
   display: flex;
   flex-direction: column;
-  gap: calc(2 * var(--gap));
+  gap: var(--gap);
   align-items: center;
   background-color: var(--background-color);
 }
 
-.text-section p {
-  margin: 0 auto;
-  max-width: 70ch;
+.landing-page > article:nth-child(1) {
+  grid-area: header;
+  text-align: center;
 }
 
-.landing-page .text-section:first-child {
+.landing-page > article:nth-child(2) {
+  grid-area: text;
+}
+
+.landing-page > article:nth-child(3) {
+  grid-area: cta;
+  text-align: center;
+  gap: calc(var(--gap) * 2);
+}
+
+.landing-page > article {
+  padding: calc(2 * var(--margin)) var(--margin);
   border: thin solid var(--border-color);
-  padding: var(--margin);
-  margin-left: auto;
-  margin-right: auto;
-  max-width: calc(var(--margin) * 2 + 40rem);
+  box-shadow: var(--box-shadow);
 }
