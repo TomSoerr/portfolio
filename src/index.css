@@ -150,18 +150,8 @@ a {
   display: contents;
 }
 
-/* Mobile */
-@media only screen and (min-width: 320px) and (max-width: 767px) {
+@media only screen and (max-width: 480px) {
 }
 
-/* Tablet */
-@media only screen and (min-width: 768px) and (max-width: 990px) {
-}
-
-/* Desktop */
-@media only screen and (min-width: 991px) and (max-width: 1179px) {
-}
-
-/* Desktop Wide */
-@media only screen and (min-width: 1180px) {
+@media only screen and (max-width: 800px) {
 }

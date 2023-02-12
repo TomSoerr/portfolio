@@ -4,7 +4,6 @@ footer {
   height: calc(var(--nav-height) * 2);
   background-color: var(--color);
   color: var(--background-color);
-  overflow: hidden;
   padding: 0 var(--page-margin);
   justify-content: space-evenly;
   justify-items: center;

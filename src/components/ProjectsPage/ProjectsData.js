@@ -81,7 +81,7 @@ const data = {
         "Wie in vielen anderen Projekte habe ich hier auch mit dem JavaScript-Modul-Packer Webpack gearbeitet. ",
       ],
       imageLink: "https://tomsoerr.github.io/odin-todo-list/",
-      image: "/img/todo-list.png",
+      image: "/img/todo-list.jpg",
       icons: createIcons(
         "https://github.com/TomSoerr/odin-todo-list",
         "https://tomsoerr.github.io/odin-todo-list/"
@@ -114,8 +114,8 @@ const data = {
         "Dieses Plakat war ein Auftrag von meinen Lehrer:innen zum Thema Corporate Design. Zur Aufgabenstellung gehörte ein Briefing des Kunden sowie konkrete Angaben zum Design und Layout. Das Ziel war es außerdem, dass das Plakat visuell zu den anderen Plakaten der Ausstellung passt.",
         "Zu Beginn suchte ich mir passend zum Thema eine Rebellin aus.  Im nächsten Schritt habe ich für die Logoentwicklung ein Moodboard erstellt, dann mithilfe einer morphologischen Matrix erste Skizzen für das Logo gezeichnet und diese dann in Illustrator weiter ausgeführt. Mit dem von mir gesammelten Material habe ich das Plakat in InDesign zusammengestellt und für die Bildbearbeitung Photoshop benutzt.",
       ],
-      imageLink: "/img/poster.pdf",
-      image: "/img/poster-half.jpg",
+      imageLink: "/img/rebellinnen-plakat.jpg",
+      image: "/img/rebellinnen.jpg",
       icons: [],
     },
     {
@@ -127,7 +127,7 @@ const data = {
         "Diese Wetter App wurde im Rahmen des Odin Kurses umgesetzt. Sie ist mit HTML, CSS und JavaScript geschrieben. Die Wetterdaten werden von der OpenWeatherMap API bezogen. Die App ist responsive und funktioniert auf allen Geräten.",
       ],
       imageLink: "https://tomsoerr.github.io/odin-weather-app/",
-      image: "/img/weather-app.png",
+      image: "/img/weather-app.jpg",
       icons: createIcons(
         "https://github.com/TomSoerr/odin-weather-app",
         "https://tomsoerr.github.io/odin-weather-app/"
@@ -142,7 +142,7 @@ const data = {
         "Im Rahmen des Odin Kurses habe ich noch viele weitere Projekte umgesetzt. Diese sind alle auf Github zu finden. Außerdem habe ich noch ein paar weitere Projekte, die ich nicht im Rahmen des Kurses gemacht habe. Diese sind ebenfalls auf Github zu finden.",
       ],
       imageLink: "https://github.com/TomSoerr",
-      image: "/img/github.png",
+      image: "/img/github.jpg",
       icons: [
         {
           iconLink: "https://github.com/TomSoerr",

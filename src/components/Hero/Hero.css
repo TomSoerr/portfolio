@@ -62,7 +62,6 @@
     "h1 h1 ." auto
     ". box box" auto
     / 1fr 1fr 1fr;
-  overflow: scroll;
   align-items: center;
 }
 
