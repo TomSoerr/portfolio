@@ -1,14 +1,14 @@
 .project-card-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
   justify-content: space-between;
   gap: calc(var(--gap) * 3);
   grid-auto-rows: auto;
-  padding: calc(var(--gap) * 6) var(--page-margin);
+  padding: var(--page-margin);
 }
 
 .cta {
-  margin-bottom: calc(var(--gap) * 6);
+  margin-bottom: var(--page-margin);
   padding: var(--margin) var(--page-margin);
   border-bottom: thin solid var(--border-color);
   border-top: thin solid var(--border-color);
@@ -21,4 +21,11 @@
 
 .cta h2 {
   margin: 0;
+}
+
+/* Mobile */
+@media only screen and (max-width: 599px) {
+  .project-card-container {
+    grid-template-columns: repeat(auto-fit, minmax(16.5rem, 1fr));
+  }
 }

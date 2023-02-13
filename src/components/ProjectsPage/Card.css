@@ -45,8 +45,9 @@
 }
 
 .project-card .icons {
-  height: 1.2rem;
-  width: auto;
+  height: auto;
+  width: 1.4rem;
+  min-width: 1.4rem;
   display: block;
 }
 
