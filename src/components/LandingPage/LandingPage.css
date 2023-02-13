@@ -1,11 +1,12 @@
 .landing-page {
-  padding: calc(var(--gap) * 6) var(--page-margin);
+  padding: var(--page-margin);
   display: grid;
   grid:
     "header header header header . ."
     ". . text text text text"
     ". cta cta cta cta ."
     / 1fr 1fr 0.5fr 0.5fr 1fr 1fr;
+  justify-items: center;
 
   /* grid-template-columns: repeat(6, 1fr); */
   row-gap: calc(var(--gap) * 3);
@@ -41,7 +42,19 @@
 }
 
 .landing-page > article {
-  padding: calc(2 * var(--margin)) var(--margin);
+  padding: var(--margin);
   border: thin solid var(--border-color);
   box-shadow: var(--box-shadow);
+  max-width: 35rem;
+}
+
+/* Mobile */
+@media only screen and (max-width: 599px) {
+  .landing-page {
+    grid:
+      "header"
+      "text"
+      "cta"
+      / 1fr;
+  }
 }

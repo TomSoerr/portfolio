@@ -1,24 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@300;600&family=Krona+One&display=swap");
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: "Krona One", sans-serif;
-}
-
-h1 {
-  font-size: 6.854rem;
-  font-weight: 700;
-}
-
-h2 {
-  font-size: 1.618rem;
-}
-
 :root {
+  --h-2: 1.618rem;
   --shadow-color: rgb(224, 224, 224);
   --shadow-offset: 6px;
   --box-shadow: var(--shadow-offset) var(--shadow-offset) 0px
@@ -52,6 +35,24 @@ h2 {
   box-sizing: border-box;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Krona One", sans-serif;
+}
+
+h1 {
+  font-size: 6.854rem;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: var(-h-2);
+}
+
 img {
   max-width: 100%;
   height: auto;
@@ -67,7 +68,7 @@ button,
   background-color: var(--background-color);
   color: var(--color);
   border: thin solid var(--border-color);
-  padding: 0.5em 1.5em;
+  padding: calc(var(--gap) * 0.5) calc(var(--gap) * 1.5);
   border-radius: var(--border-radius);
   cursor: pointer;
   transition: var(--transition);
@@ -81,7 +82,8 @@ button,
 :not(.project-card-overlay) .button {
   background-color: var(--secondary-color);
   color: var(--background-color);
-  font-size: 1.618rem;
+  font-size: var(--h-2);
+  padding: var(--gap) calc(var(--gap) * 3);
   font-weight: 600;
   border: none;
 }
@@ -142,16 +144,75 @@ ul {
 a {
   text-decoration: none;
   color: var(--background-color);
-  font-size: 1rem;
-  font-weight: 400;
 }
 
 .wrapper {
   display: contents;
 }
 
-@media only screen and (max-width: 480px) {
+/* Desktop */
+@media only screen and (max-width: 1179px) {
+  /* 1.414 */
+  :root {
+    --page-margin: 3.8rem;
+    --margin: 1.8rem;
+    --gap: 0.9rem;
+    --nav-height: 4rem;
+    --h-2: 1.414rem;
+  }
+
+  h1 {
+    font-size: 5.653rem;
+  }
 }
 
-@media only screen and (max-width: 800px) {
+/* Tablet Landscape */
+@media only screen and (max-width: 990px) {
+  /* 1.333 */
+  :root {
+    --page-margin: 3.1rem;
+    --margin: 1.6rem;
+    --gap: 0.8rem;
+    --nav-height: 3.5rem;
+    --h-2: 1.333rem;
+  }
+
+  h1 {
+    font-size: 4.209rem;
+  }
+}
+
+/* Tablet Portrait */
+@media only screen and (max-width: 767px) {
+  /* 1.333 */
+
+  :root {
+    --page-margin: 2.3rem;
+    --margin: 1.4rem;
+    --gap: 0.8rem;
+    --nav-height: 3.5rem;
+  }
+  h1 {
+    font-size: 3.157rem;
+  }
+}
+
+/* Mobile */
+@media only screen and (max-width: 599px) {
+  /* 1.2 */
+
+  :root {
+    --page-margin: 1.6rem;
+    --margin: 1.2rem;
+    --gap: 0.7rem;
+    --nav-height: 3.2rem;
+    --h-2: 1.2rem;
+  }
+  h1 {
+    font-size: 2.074rem;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+  }
 }

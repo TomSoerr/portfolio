@@ -28,9 +28,8 @@
 .down-arrow {
   position: absolute;
   bottom: 0;
-  height: calc(var(--nav-height) * 1.5);
   left: 50%;
-  transform: translateX(-50%);
+  height: calc(var(--nav-height) * 1.5);
   z-index: 1;
   animation: jump 1.5s ease-out infinite alternate;
   filter: invert();
@@ -43,25 +42,27 @@
 
 @keyframes jump {
   0% {
-    transform: translateY(0);
+    transform: translate(-50%, 0);
   }
   100% {
-    transform: translateY(-2rem);
+    transform: translate(-50%, calc(-1 * var(--page-margin)));
   }
 }
 
 .hero {
   width: 100%;
   height: 100vh;
-  padding: calc(var(--gap) * 6 + var(--nav-height)) var(--page-margin)
-    calc(var(--gap) * 6);
+  position: relative;
+  padding: calc(var(--page-margin) + var(--nav-height)) var(--page-margin)
+    var(--page-margin);
+
   background-color: transparent;
   display: grid;
   row-gap: calc(var(--gap) * 3);
   grid:
-    "h1 h1 ." auto
-    ". box box" auto
-    / 1fr 1fr 1fr;
+    "h1 h1" auto
+    ". box" auto
+    / auto 1fr;
   align-items: center;
 }
 
@@ -69,6 +70,7 @@
   margin: 0 0% 0 0;
   color: var(--background-color);
   grid-area: h1;
+  max-width: 16ch;
 }
 
 .hero .hero-text span {
@@ -77,4 +79,25 @@
 
 .hero .hero-box {
   grid-area: box;
+}
+
+/* Desktop */
+@media only screen and (max-width: 1179px) {
+  .hero {
+    grid:
+      "h1 h1" auto
+      ". box" auto
+      / auto 2fr;
+  }
+}
+
+/* Tablet Portrait */
+@media only screen and (max-width: 767px) {
+  main:not(.only-element) .hero {
+    height: 33vh;
+  }
+
+  .down-arrow {
+    display: none;
+  }
 }
