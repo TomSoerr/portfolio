@@ -10,12 +10,12 @@ h6 {
 }
 
 h1 {
-  font-size: 6rem;
+  font-size: 6.854rem;
   font-weight: 700;
 }
 
 h2 {
-  font-size: 1.6rem;
+  font-size: 1.618rem;
 }
 
 :root {
@@ -81,7 +81,7 @@ button,
 :not(.project-card-overlay) .button {
   background-color: var(--secondary-color);
   color: var(--background-color);
-  font-size: 1.5rem;
+  font-size: 1.618rem;
   font-weight: 600;
   border: none;
 }
