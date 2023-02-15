@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/%7Brepo-name%7D/static/css/main.7aaeb33b.css",
-    "main.js": "/%7Brepo-name%7D/static/js/main.2e1b61f9.js",
-    "static/js/787.30237536.chunk.js": "/%7Brepo-name%7D/static/js/787.30237536.chunk.js",
-    "static/media/hanken-grotesk-v5-latin-300.woff": "/%7Brepo-name%7D/static/media/hanken-grotesk-v5-latin-300.8f88a3f86da4eb5fea2d.woff",
-    "static/media/hanken-grotesk-v5-latin-600.woff": "/%7Brepo-name%7D/static/media/hanken-grotesk-v5-latin-600.9f77d5a8dabea581c704.woff",
-    "static/media/krona-one-v14-latin-regular.woff": "/%7Brepo-name%7D/static/media/krona-one-v14-latin-regular.d5e94b502304bd9333df.woff",
-    "static/media/hanken-grotesk-v5-latin-300.woff2": "/%7Brepo-name%7D/static/media/hanken-grotesk-v5-latin-300.2ae9c44f27cc4538fb6c.woff2",
-    "static/media/hanken-grotesk-v5-latin-600.woff2": "/%7Brepo-name%7D/static/media/hanken-grotesk-v5-latin-600.c8a3eb78cc61721a3f96.woff2",
-    "static/media/krona-one-v14-latin-regular.woff2": "/%7Brepo-name%7D/static/media/krona-one-v14-latin-regular.2f0d0d32161acbb479ff.woff2",
-    "index.html": "/%7Brepo-name%7D/index.html",
-    "main.7aaeb33b.css.map": "/%7Brepo-name%7D/static/css/main.7aaeb33b.css.map",
-    "main.2e1b61f9.js.map": "/%7Brepo-name%7D/static/js/main.2e1b61f9.js.map",
-    "787.30237536.chunk.js.map": "/%7Brepo-name%7D/static/js/787.30237536.chunk.js.map"
+    "main.css": "/portfolio/static/css/main.6813ba3b.css",
+    "main.js": "/portfolio/static/js/main.496d5ca1.js",
+    "static/js/787.30237536.chunk.js": "/portfolio/static/js/787.30237536.chunk.js",
+    "static/media/hanken-grotesk-v5-latin-300.woff": "/portfolio/static/media/hanken-grotesk-v5-latin-300.8f88a3f86da4eb5fea2d.woff",
+    "static/media/hanken-grotesk-v5-latin-600.woff": "/portfolio/static/media/hanken-grotesk-v5-latin-600.9f77d5a8dabea581c704.woff",
+    "static/media/krona-one-v14-latin-regular.woff": "/portfolio/static/media/krona-one-v14-latin-regular.d5e94b502304bd9333df.woff",
+    "static/media/hanken-grotesk-v5-latin-300.woff2": "/portfolio/static/media/hanken-grotesk-v5-latin-300.2ae9c44f27cc4538fb6c.woff2",
+    "static/media/hanken-grotesk-v5-latin-600.woff2": "/portfolio/static/media/hanken-grotesk-v5-latin-600.c8a3eb78cc61721a3f96.woff2",
+    "static/media/krona-one-v14-latin-regular.woff2": "/portfolio/static/media/krona-one-v14-latin-regular.2f0d0d32161acbb479ff.woff2",
+    "index.html": "/portfolio/index.html",
+    "main.6813ba3b.css.map": "/portfolio/static/css/main.6813ba3b.css.map",
+    "main.496d5ca1.js.map": "/portfolio/static/js/main.496d5ca1.js.map",
+    "787.30237536.chunk.js.map": "/portfolio/static/js/787.30237536.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.7aaeb33b.css",
-    "static/js/main.2e1b61f9.js"
+    "static/css/main.6813ba3b.css",
+    "static/js/main.496d5ca1.js"
   ]
 }
