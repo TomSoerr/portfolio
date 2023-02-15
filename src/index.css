@@ -19,7 +19,7 @@
   --margin: 2rem;
   /* space between to siblings */
   --gap: 1rem;
-  --nav-height: 4.5rem;
+  --nav-height: 5rem;
   --scale: scale(1.05);
   --transition: all 0.4s ease-in-out;
   font-family: "Hanken Grotesk", -apple-system, BlinkMacSystemFont, "Segoe UI",
@@ -50,7 +50,7 @@ h1 {
 }
 
 h2 {
-  font-size: var(-h-2);
+  font-size: var(--h-2);
 }
 
 img {
@@ -101,7 +101,7 @@ button:focus,
 .button:hover {
   transform: var(--scale);
   background-color: var(--secondary-color);
-  filter: hue-rotate(-20deg);
+  filter: hue-rotate(20deg) brightness(1.2);
   color: var(--background-color);
 }
 
@@ -157,7 +157,7 @@ a {
     --page-margin: 3.8rem;
     --margin: 1.8rem;
     --gap: 0.9rem;
-    --nav-height: 4rem;
+    --nav-height: 4.5rem;
     --h-2: 1.414rem;
   }
 
@@ -173,7 +173,7 @@ a {
     --page-margin: 3.1rem;
     --margin: 1.6rem;
     --gap: 0.8rem;
-    --nav-height: 3.5rem;
+    --nav-height: 4rem;
     --h-2: 1.333rem;
   }
 
@@ -189,8 +189,6 @@ a {
   :root {
     --page-margin: 2.3rem;
     --margin: 1.4rem;
-    --gap: 0.8rem;
-    --nav-height: 3.5rem;
   }
   h1 {
     font-size: 3.157rem;
@@ -204,9 +202,9 @@ a {
   :root {
     --page-margin: 1.6rem;
     --margin: 1.2rem;
-    --gap: 0.7rem;
+    --gap: 0.5rem;
     --nav-height: 3.2rem;
-    --h-2: 1.2rem;
+    --h-2: 1.125rem;
   }
   h1 {
     font-size: 2.074rem;
@@ -216,19 +214,20 @@ a {
 /* Old Mobile */
 @media only screen and (max-width: 360px) {
   :root {
-    --gap: 0.7rem;
-    --h-2: 1.125rem;
+    --gap: 0.3rem;
+    --h-2: 1rem;
+  }
+  h1 {
+    font-size: 1.5rem;
+  }
+  footer {
+    font-size: 0.833rem;
+    --gap: 0.5rem;
   }
 }
 
 /* TODO:
-grid: "h1 h1"
-min height: 50vh
-Logo größer
-line breack "hi, ich bin Tom
-front end dev nicht entwickler
-hue roll andere richtign 
-rebellinen
-mehr erfahren knöpfe
+- Icons einheitlich
+- Github und live preview auch bei overlay
 
 */

@@ -21,6 +21,7 @@ const ContactPage = (props) => {
   return (
     <main className="only-element">
       <Hero
+        bgImg={3}
         box={
           <ul className="contact-box">
             {[

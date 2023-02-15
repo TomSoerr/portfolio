@@ -22,39 +22,6 @@ const data = {
   projects: [
     {
       id: uuid(),
-      name: "Admin Dashboard",
-      details:
-        "Eine Dashboard mit einem flexiblen CSS Grid Layout welches sich optimal an verschiedene Bildschirmgrößen anpasst.",
-      moreDetails: [
-        "Mit diesem Odin Projekt habe ich das Ziel verfolgt, eine Webseite mit einem flexiblen Grid Layout zu erstellen. Durch die Verwendung von CSS Grid konnte ich die Seite komplett responsiv gestalten. Das erstellte Dashboard besitzt keinerlei Funktionen und hat auch kein Back-End.",
-        "An der Seite gibt es eine Leiste mit verschiedenen Menüpunkten, die einzelnen Kacheln sind dann unabhängige Container, die sich dem Platz anpassen. Bei dem Design habe ich mich an den Aufbau eines Contentmanagement Systeme orientiert.",
-        "Der Code sowie eine Live-Preview des Projekts sind auf meinem GitHub-Profil verfügbar. Interessierte können dort auch weitere Projekte von mir einsehen sowie einen zeitlichen Verlauf meiner Commits verfolgen. Ich bin stolz darauf, eine flexible und responsive Webseite mit CSS Grid erstellt zu haben, da es meiner Begeisterung für Webentwicklung entspricht.",
-      ],
-      imageLink: "https://tomsoerr.github.io/odin-admin-dashboard/",
-      image: "/img/admin-dashboard.jpg",
-      icons: createIcons(
-        "https://github.com/TomSoerr/odin-admin-dashboard",
-        "https://tomsoerr.github.io/odin-admin-dashboard/"
-      ),
-    },
-    {
-      id: uuid(),
-      name: "Sign-up Form",
-      details:
-        "Ein Anmeldeformular mit Eingabeüberprüfung und Passwortstärkeanzeige.",
-      moreDetails: [
-        "In diesem Formular-Projekt von Odin, geht es vordergründig um das Styling von Input Element mit CSS. Dadurch erhält der Benutzer ein direktes Feedback, ob seine Daten valide sind, ohne dabei auf das Back-End warten zu müssen. Die Eingabeüberprüfung wurde hier mit dem HTML Attribut „pattern“ und RegEx gemacht. JavaScript habe ich vermieden, um den Prozess zu vereinfachen.",
-        "Für die Passwortüberprüfung war allerdings JavaScript erforderlich. Bei dem Design gab es keine Designvorgaben, sodass ich mich für einen brutalistisches entschieden habe.",
-      ],
-      imageLink: "https://tomsoerr.github.io/odin-sign-up-form/",
-      image: "/img/sign-up-form.png",
-      icons: createIcons(
-        "https://github.com/TomSoerr/odin-sign-up-form",
-        "https://tomsoerr.github.io/odin-sign-up-form/"
-      ),
-    },
-    {
-      id: uuid(),
       name: "Battleship",
       details:
         "Eine Webversion des Brettspiels „Schiffe versenken“. Dabei habe ich „Test Driven Development“ angewendet.",
@@ -89,6 +56,21 @@ const data = {
     },
     {
       id: uuid(),
+      name: "Weather App",
+      details:
+        "Eine einfache aber funktionale Wetter App mit einer Suchfunktion.",
+      moreDetails: [
+        "Diese Wetter App wurde im Rahmen des Odin Kurses umgesetzt. Sie ist mit HTML, CSS und JavaScript geschrieben. Die Wetterdaten werden von der OpenWeatherMap API bezogen. Die App ist responsive und funktioniert auf allen Geräten.",
+      ],
+      imageLink: "https://tomsoerr.github.io/odin-weather-app/",
+      image: "/img/weather-app.jpg",
+      icons: createIcons(
+        "https://github.com/TomSoerr/odin-weather-app",
+        "https://tomsoerr.github.io/odin-weather-app/"
+      ),
+    },
+    {
+      id: uuid(),
       name: "Python",
       details:
         "Meine gesammelten Python Erfahrungen durch eine Facharbeit, ein YoloV5 Modell, ein Macro Recorder und etwas Django.",
@@ -107,6 +89,39 @@ const data = {
     },
     {
       id: uuid(),
+      name: "Sign-up Form",
+      details:
+        "Ein Anmeldeformular mit Eingabeüberprüfung und Passwortstärkeanzeige.",
+      moreDetails: [
+        "In diesem Formular-Projekt von Odin, geht es vordergründig um das Styling von Input Element mit CSS. Dadurch erhält der Benutzer ein direktes Feedback, ob seine Daten valide sind, ohne dabei auf das Back-End warten zu müssen. Die Eingabeüberprüfung wurde hier mit dem HTML Attribut „pattern“ und RegEx gemacht. JavaScript habe ich vermieden, um den Prozess zu vereinfachen.",
+        "Für die Passwortüberprüfung war allerdings JavaScript erforderlich. Bei dem Design gab es keine Designvorgaben, sodass ich mich für einen brutalistisches entschieden habe.",
+      ],
+      imageLink: "https://tomsoerr.github.io/odin-sign-up-form/",
+      image: "/img/sign-up-form.png",
+      icons: createIcons(
+        "https://github.com/TomSoerr/odin-sign-up-form",
+        "https://tomsoerr.github.io/odin-sign-up-form/"
+      ),
+    },
+    {
+      id: uuid(),
+      name: "Admin Dashboard",
+      details:
+        "Eine Dashboard mit einem flexiblen CSS Grid Layout welches sich optimal an verschiedene Bildschirmgrößen anpasst.",
+      moreDetails: [
+        "Mit diesem Odin Projekt habe ich das Ziel verfolgt, eine Webseite mit einem flexiblen Grid Layout zu erstellen. Durch die Verwendung von CSS Grid konnte ich die Seite komplett responsiv gestalten. Das erstellte Dashboard besitzt keinerlei Funktionen und hat auch kein Back-End.",
+        "An der Seite gibt es eine Leiste mit verschiedenen Menüpunkten, die einzelnen Kacheln sind dann unabhängige Container, die sich dem Platz anpassen. Bei dem Design habe ich mich an den Aufbau eines Contentmanagement Systeme orientiert.",
+        "Der Code sowie eine Live-Preview des Projekts sind auf meinem GitHub-Profil verfügbar. Interessierte können dort auch weitere Projekte von mir einsehen sowie einen zeitlichen Verlauf meiner Commits verfolgen. Ich bin stolz darauf, eine flexible und responsive Webseite mit CSS Grid erstellt zu haben, da es meiner Begeisterung für Webentwicklung entspricht.",
+      ],
+      imageLink: "https://tomsoerr.github.io/odin-admin-dashboard/",
+      image: "/img/admin-dashboard.jpg",
+      icons: createIcons(
+        "https://github.com/TomSoerr/odin-admin-dashboard",
+        "https://tomsoerr.github.io/odin-admin-dashboard/"
+      ),
+    },
+    {
+      id: uuid(),
       name: "Rebellinnen Plakat ",
       details:
         "Ein Plakat für eine Ausstellung über Rebellinnen mit einem Logo und einem Corporate Design.",
@@ -114,25 +129,11 @@ const data = {
         "Dieses Plakat war ein Auftrag von meinen Lehrer:innen zum Thema Corporate Design. Zur Aufgabenstellung gehörte ein Briefing des Kunden sowie konkrete Angaben zum Design und Layout. Das Ziel war es außerdem, dass das Plakat visuell zu den anderen Plakaten der Ausstellung passt.",
         "Zu Beginn suchte ich mir passend zum Thema eine Rebellin aus.  Im nächsten Schritt habe ich für die Logoentwicklung ein Moodboard erstellt, dann mithilfe einer morphologischen Matrix erste Skizzen für das Logo gezeichnet und diese dann in Illustrator weiter ausgeführt. Mit dem von mir gesammelten Material habe ich das Plakat in InDesign zusammengestellt und für die Bildbearbeitung Photoshop benutzt.",
       ],
-      imageLink: "/img/rebellinnen-plakat.jpg",
+      imageLink: "/img/rebellinnen-plakat.pdf",
       image: "/img/rebellinnen.jpg",
       icons: [],
     },
-    {
-      id: uuid(),
-      name: "Weather App",
-      details:
-        "Eine einfache aber funktionale Wetter App mit einer Suchfunktion.",
-      moreDetails: [
-        "Diese Wetter App wurde im Rahmen des Odin Kurses umgesetzt. Sie ist mit HTML, CSS und JavaScript geschrieben. Die Wetterdaten werden von der OpenWeatherMap API bezogen. Die App ist responsive und funktioniert auf allen Geräten.",
-      ],
-      imageLink: "https://tomsoerr.github.io/odin-weather-app/",
-      image: "/img/weather-app.jpg",
-      icons: createIcons(
-        "https://github.com/TomSoerr/odin-weather-app",
-        "https://tomsoerr.github.io/odin-weather-app/"
-      ),
-    },
+
     {
       id: uuid(),
       name: "Other Projects",

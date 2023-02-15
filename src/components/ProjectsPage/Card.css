@@ -101,8 +101,7 @@
 }
 
 .project-card-overlay .more-details p {
-  margin-block-start: 1em;
-  margin-block-end: 1em;
+  margin: var(--gap) 0;
 }
 
 .project-card-overlay .more-details :first-child {

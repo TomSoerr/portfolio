@@ -19,6 +19,7 @@ const LandingPage = (props) => {
   return (
     <main>
       <Hero
+        bgImg={2}
         navHeight={props.navHeight}
         headline="Willkommen! Lass uns gestalten."
       />
