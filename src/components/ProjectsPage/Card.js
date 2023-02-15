@@ -73,7 +73,7 @@ const More = (props) => {
 const Less = (props) => {
   return (
     <button className="less" onClick={props.onClick}>
-      <img className="less-icon" src="/img/less.svg" alt="less"></img>
+      <img className="less-icon" src="./img/less.svg" alt="less"></img>
     </button>
   );
 };
