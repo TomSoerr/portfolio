@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Ebene_1" data-name="Ebene 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #000;
+        stroke-miterlimit: 10;
+        stroke-width: .25px;
+      }
+    </style>
+  </defs>
+  <polyline class="cls-1" points="-14.37 351.59 -16.75 333.29 5.96 331.24"/>
+  <polyline class="cls-1" points="-2.72 358.6 -5.87 338.98 18.2 336.18"/>
+  <polyline class="cls-1" points="8.92 365.28 4.93 344.37 30.34 340.74"/>
+  <polyline class="cls-1" points="20.55 371.61 15.64 349.45 42.37 344.91"/>
+  <polyline class="cls-1" points="32.17 377.61 26.28 354.23 54.29 348.69"/>
+  <polyline class="cls-1" points="43.79 383.27 36.83 358.71 66.08 352.09"/>
+  <polyline class="cls-1" points="55.41 388.59 47.29 362.89 77.73 355.11"/>
+  <polyline class="cls-1" points="67.03 393.57 57.66 366.79 89.25 357.74"/>
+  <polyline class="cls-1" points="78.65 398.2 67.95 370.4 100.63 359.98"/>
+  <polyline class="cls-1" points="90.28 402.49 78.15 373.73 111.85 361.84"/>
+  <polyline class="cls-1" points="101.91 406.42 88.26 376.78 122.91 363.33"/>
+  <polyline class="cls-1" points="113.55 410 98.28 379.56 133.8 364.43"/>
+  <polyline class="cls-1" points="125.2 413.22 108.22 382.08 144.52 365.16"/>
+  <polyline class="cls-1" points="136.86 416.08 118.07 384.34 155.04 365.53"/>
+  <polyline class="cls-1" points="148.54 418.57 127.83 386.34 165.37 365.52"/>
+  <polyline class="cls-1" points="160.23 420.68 137.52 388.08 175.5 365.16"/>
+  <polyline class="cls-1" points="171.94 422.41 147.12 389.58 185.4 364.44"/>
+  <polyline class="cls-1" points="183.66 423.75 156.65 390.84 195.08 363.37"/>
+  <polyline class="cls-1" points="195.39 424.69 166.1 391.86 204.52 361.97"/>
+  <polyline class="cls-1" points="207.12 425.22 175.48 392.63 213.72 360.24"/>
+  <polyline class="cls-1" points="218.85 425.32 184.79 393.17 222.65 358.18"/>
+  <polyline class="cls-1" points="230.57 425 194.03 393.47 231.32 355.82"/>
+  <polyline class="cls-1" points="240.99 424.23 201.92 393.53 238.43 353.16"/>
+  <polyline class="cls-1" points="250.87 423 209.25 393.34 244.76 350.21"/>
+  <polyline class="cls-1" points="260.57 421.31 216.39 392.9 250.69 346.98"/>
+  <polyline class="cls-1" points="270.09 419.13 223.36 392.19 256.2 343.48"/>
+  <polyline class="cls-1" points="279.41 416.47 230.14 391.21 261.31 339.72"/>
+  <polyline class="cls-1" points="288.52 413.31 236.76 389.95 266.03 335.72"/>
+  <polyline class="cls-1" points="297.4 409.65 243.21 388.38 270.36 331.47"/>
+  <polyline class="cls-1" points="306.03 405.47 249.49 386.51 274.33 326.97"/>
+  <polyline class="cls-1" points="314.42 400.78 255.63 384.3 277.94 322.24"/>
+  <polyline class="cls-1" points="322.54 395.58 261.61 381.74 281.22 317.28"/>
+  <polyline class="cls-1" points="330.39 389.86 267.44 378.82 284.2 312.07"/>
+  <polyline class="cls-1" points="337.95 383.63 273.13 375.52 286.88 306.62"/>
+  <polyline class="cls-1" points="345.22 376.89 278.67 371.82 289.29 300.91"/>
+  <polyline class="cls-1" points="352.19 369.66 284.05 367.72 291.45 294.95"/>
+  <polyline class="cls-1" points="358.86 361.31 289.28 362.56 293.39 288.1"/>
+  <polyline class="cls-1" points="365.23 351.47 294.36 355.98 295.1 279.97"/>
+  <polyline class="cls-1" points="372.61 341.15 300.6 348.94 297.94 271.53"/>
+  <polyline class="cls-1" points="380.07 330.35 307.05 341.45 300.97 262.79"/>
+  <polyline class="cls-1" points="386.03 321.78 311.81 334.38 304.24 254.4"/>
+  <polyline class="cls-1" points="390.84 315.65 315.13 327.96 308.01 246.5"/>
+  <polyline class="cls-1" points="395.75 309.49 318.54 321.44 311.94 238.49"/>
+  <polyline class="cls-1" points="400.76 303.33 322.05 314.84 316.04 230.41"/>
+  <polyline class="cls-1" points="405.88 297.16 325.66 308.16 320.33 222.24"/>
+  <polyline class="cls-1" points="411.1 291 329.37 301.42 324.8 214.01"/>
+  <polyline class="cls-1" points="416.43 284.88 333.18 294.62 329.45 205.73"/>
+  <polyline class="cls-1" points="421.86 278.78 337.1 287.77 334.3 197.41"/>
+  <polyline class="cls-1" points="427.39 272.74 341.12 280.89 339.34 189.07"/>
+  <polyline class="cls-1" points="433.04 266.76 345.25 273.98 344.59 180.7"/>
+  <polyline class="cls-1" points="439.06 260.86 349.77 267.05 350.32 172.33"/>
+  <polyline class="cls-1" points="445.57 255.04 354.79 260.11 356.65 163.97"/>
+  <polyline class="cls-1" points="452.24 249.33 359.97 253.18 363.25 155.63"/>
+  <polyline class="cls-1" points="459.07 243.72 365.33 246.25 370.12 147.33"/>
+  <polyline class="cls-1" points="466.06 238.24 370.87 239.34 377.29 139.07"/>
+  <polyline class="cls-1" points="473.2 232.67 376.59 232.24 384.74 130.65"/>
+  <polyline class="cls-1" points="480.51 226.65 382.5 224.56 392.5 121.69"/>
+  <polyline class="cls-1" points="487.98 220.73 388.6 216.87 400.57 112.76"/>
+  <polyline class="cls-1" points="495.61 214.92 394.89 209.18 408.95 103.88"/>
+  <polyline class="cls-1" points="503.41 209.22 401.39 201.48 417.66 95.04"/>
+  <polyline class="cls-1" points="511.36 203.66 408.1 193.78 426.7 86.27"/>
+  <polyline class="cls-1" points="519.48 198.23 415.03 186.1 436.09 77.57"/>
+  <polyline class="cls-1" points="527.76 192.95 422.18 178.44 445.82 68.97"/>
+  <polyline class="cls-1" points="536.2 187.82 429.55 170.8 455.9 60.47"/>
+  <polyline class="cls-1" points="544.8 182.85 437.16 163.19 466.34 52.09"/>
+  <polyline class="cls-1" points="553.56 178.04 445 155.62 477.15 43.84"/>
+  <polyline class="cls-1" points="562.47 173.42 453.1 148.09 488.33 35.74"/>
+  <polyline class="cls-1" points="571.54 168.97 461.45 140.62 499.89 27.81"/>
+  <polyline class="cls-1" points="580.77 164.7 470.05 133.21 511.82 20.05"/>
+  <polyline class="cls-1" points="590.16 160.63 478.93 125.87 524.14 12.49"/>
+  <polyline class="cls-1" points="599.7 156.75 488.08 118.61 536.84 5.14"/>
+  <polyline class="cls-1" points="609.39 153.07 497.5 111.44 549.92 -1.98"/>
+</svg>
