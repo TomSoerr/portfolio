@@ -6,7 +6,11 @@ import { scroller } from "react-scroll";
 const Hero = (props) => {
   return (
     <div className="wrapper">
-      <img alt="Background" className="hero-bg" src="/img/test3.svg"></img>
+      <img
+        alt="Background"
+        className="hero-bg"
+        src={props.bgImg ? `/img/bg-${props.bgImg}.svg` : "/img/bg-1.svg"}
+      ></img>
       <header className="hero">
         <div className="filter"></div>
         <WritingEffect text={props.headline}></WritingEffect>
