@@ -2,17 +2,16 @@
 
 :root {
   --h-2: 1.618rem;
-  --shadow-color: rgb(224, 224, 224);
+  --shadow-color: rgb(215, 211, 217);
   --shadow-offset: 6px;
   --box-shadow: var(--shadow-offset) var(--shadow-offset) 0px
     var(--shadow-color);
   --box-shadow-hover: 0px 0px 0px var(--shadow-color);
-  --hover-color: rgb(237, 237, 237);
+  --hover-color: var(--shadow-color);
   --border-color: rgb(0, 0, 0);
-  --color-mid: rgb(72, 72, 72);
   --secondary-color: rgb(104, 55, 218);
   --border-radius: 0px;
-  --background-color: rgb(255, 255, 255);
+  --background-color: hsl(285, 40%, 98%);
   --color: rgb(0, 0, 0);
   --page-margin: 5rem; /* no % allowed */
   /* space between element and a outer element */
@@ -227,7 +226,6 @@ a {
 }
 
 /* TODO:
-- Icons einheitlich
 - Github und live preview auch bei overlay
-
+- Schriften Local
 */

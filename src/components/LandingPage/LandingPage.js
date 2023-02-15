@@ -36,8 +36,8 @@ const LandingPage = (props) => {
           <Section>
             <h2>Über mich</h2>
             <p>
-              Ich bin ein sicherer Front-End-Entwickler mit Schwerpunkt auf
-              HTML/CSS. Ich habe auch gute Kenntnisse in JavaScript,
+              Ich bin ein angehender Front-End-Entwickler mit meinen Stärken in
+              HTML und CSS. Ich habe auch gute Kenntnisse in JavaScript,
               Illustrator/InDesign und einen professionellen Workflow mit Git.
               Ich habe bereits mit ReactJS und Django gearbeitet und habe
               Basiswissen in Python, Photoshop, Netzwerktechnik und

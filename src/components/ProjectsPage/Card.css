@@ -39,10 +39,14 @@
   margin: 0 auto 0 0;
 }
 
+.more-details .icons-container :first-child {
+  margin-left: auto;
+}
+
 .project-card .icons {
   height: auto;
-  width: 1.4rem;
-  min-width: 1.4rem;
+  width: calc(var(--nav-height) / 3);
+  min-width: calc(var(--nav-height) / 3);
   display: block;
 }
 
@@ -127,8 +131,8 @@
 }
 
 .project-card-overlay img.less-icon {
-  height: 1.8rem;
-  width: 1.8rem;
+  height: calc(var(--nav-height) / 2);
+  width: calc(var(--nav-height) / 2);
   margin: calc(var(--margin) / 4);
   border-radius: 50%;
   transition: var(--transition);
