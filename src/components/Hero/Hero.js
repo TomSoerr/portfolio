@@ -1,6 +1,7 @@
 import React from "react";
 import WritingEffect from "../Effects/WritingEffect";
 import "./Hero.css";
+import { scroller } from "react-scroll";
 
 const Hero = (props) => {
   return (
@@ -14,7 +15,19 @@ const Hero = (props) => {
         )}
 
         {!props.onlyElement && (
-          <a className="down-arrow" href="#scroll-to">
+          <a
+            href="#scroll-to"
+            className="down-arrow"
+            onClick={(e) => {
+              e.preventDefault();
+              scroller.scrollTo("content", {
+                duration: 1000,
+                delay: 100,
+                smooth: true,
+                offset: -props.navHeight(),
+              });
+            }}
+          >
             <img
               src="/img/less.svg"
               className="hero-icon"

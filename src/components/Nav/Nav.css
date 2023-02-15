@@ -36,6 +36,7 @@ nav#nav ul li a {
   padding: 0 calc(var(--gap) * 1.5);
   font-family: "Krona One", sans-serif;
   font-size: var(--h-2);
+  text-transform: uppercase;
 }
 
 nav#nav ul li a:hover,

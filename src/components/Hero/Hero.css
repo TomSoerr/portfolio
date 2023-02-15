@@ -31,7 +31,7 @@
   left: 50%;
   height: calc(var(--nav-height) * 1.5);
   z-index: 1;
-  animation: jump 1.5s ease-out infinite alternate;
+  animation: jump 0.75s ease-out infinite alternate;
   filter: invert();
 }
 
@@ -45,7 +45,7 @@
     transform: translate(-50%, 0);
   }
   100% {
-    transform: translate(-50%, calc(-1 * var(--page-margin)));
+    transform: translate(-50%, calc(-1 * var(--gap)));
   }
 }
 
@@ -94,7 +94,8 @@
 /* Tablet Portrait */
 @media only screen and (max-width: 767px) {
   main:not(.only-element) .hero {
-    height: 33vh;
+    min-height: 33vh;
+    height: min-content;
   }
 
   .down-arrow {
