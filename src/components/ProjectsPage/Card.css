@@ -12,11 +12,6 @@
   position: relative;
 }
 
-.project-card:hover {
-  transform: translate(var(--shadow-offset), var(--shadow-offset));
-  box-shadow: var(--box-shadow-hover);
-}
-
 .project-card-content {
   width: 100%;
   height: 100%;
@@ -102,9 +97,7 @@
   margin: 0;
   width: 100%;
   height: 100%;
-  overflow: scroll;
-  /* Chrome padding bug */
-  /* display: table; */
+  overflow-y: scroll;
 }
 
 .project-card-overlay .more-details p {

@@ -211,8 +211,24 @@ a {
   h1 {
     font-size: 2.074rem;
   }
+}
 
-  h2 {
-    font-size: 1.2rem;
+/* Old Mobile */
+@media only screen and (max-width: 360px) {
+  :root {
+    --gap: 0.7rem;
+    --h-2: 1.125rem;
   }
 }
+
+/* TODO:
+grid: "h1 h1"
+min height: 50vh
+Logo größer
+line breack "hi, ich bin Tom
+front end dev nicht entwickler
+hue roll andere richtign 
+rebellinen
+mehr erfahren knöpfe
+
+*/

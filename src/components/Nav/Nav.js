@@ -4,11 +4,11 @@ import "./Nav.css";
 import Logo from "./Logo";
 import { useLocation } from "react-router-dom";
 
-function Nav() {
+function Nav(props) {
   const location = useLocation();
 
   return (
-    <nav id="nav">
+    <nav ref={props.navRef} id="nav">
       <Logo />
       <ul>
         <NavItem
