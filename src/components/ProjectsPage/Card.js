@@ -34,6 +34,21 @@ const Overlay = (props) => {
         {props.moreDetails.map((detail, index) => (
           <p key={index}>{detail}</p>
         ))}
+        {console.log(props.name, props.icons)}
+        {props.icons[0] && (
+          <div className="icons-container">
+            {props.icons.map((icon, index) => {
+              return (
+                <Icon
+                  key={index}
+                  link={icon.iconLink}
+                  icon={icon.icon}
+                  iconAlt={icon.iconAlt}
+                />
+              );
+            })}
+          </div>
+        )}
       </div>
     </div>
   );
@@ -111,6 +126,7 @@ const Card = (props) => {
 
       {overlayShown && (
         <Overlay
+          icons={props.icons}
           name={props.name}
           class={
             willMove ? "project-card-overlay move" : "project-card-overlay"
