@@ -145,6 +145,10 @@ main {
   position: relative;
 }
 
+main.only-element {
+  overflow: hidden;
+}
+
 #scroll-to {
   /* add scroll margin */
   scroll-margin-top: var(--nav-height);
