@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.6813ba3b.css",
-    "main.js": "/portfolio/static/js/main.90c55d5f.js",
+    "main.css": "/portfolio/static/css/main.fc7dd5f2.css",
+    "main.js": "/portfolio/static/js/main.dfe852c9.js",
     "static/js/787.30237536.chunk.js": "/portfolio/static/js/787.30237536.chunk.js",
     "static/media/hanken-grotesk-v5-latin-300.woff": "/portfolio/static/media/hanken-grotesk-v5-latin-300.8f88a3f86da4eb5fea2d.woff",
     "static/media/hanken-grotesk-v5-latin-600.woff": "/portfolio/static/media/hanken-grotesk-v5-latin-600.9f77d5a8dabea581c704.woff",
@@ -10,12 +10,12 @@
     "static/media/hanken-grotesk-v5-latin-600.woff2": "/portfolio/static/media/hanken-grotesk-v5-latin-600.c8a3eb78cc61721a3f96.woff2",
     "static/media/krona-one-v14-latin-regular.woff2": "/portfolio/static/media/krona-one-v14-latin-regular.2f0d0d32161acbb479ff.woff2",
     "index.html": "/portfolio/index.html",
-    "main.6813ba3b.css.map": "/portfolio/static/css/main.6813ba3b.css.map",
-    "main.90c55d5f.js.map": "/portfolio/static/js/main.90c55d5f.js.map",
+    "main.fc7dd5f2.css.map": "/portfolio/static/css/main.fc7dd5f2.css.map",
+    "main.dfe852c9.js.map": "/portfolio/static/js/main.dfe852c9.js.map",
     "787.30237536.chunk.js.map": "/portfolio/static/js/787.30237536.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6813ba3b.css",
-    "static/js/main.90c55d5f.js"
+    "static/css/main.fc7dd5f2.css",
+    "static/js/main.dfe852c9.js"
   ]
 }
