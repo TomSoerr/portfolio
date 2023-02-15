@@ -1,4 +1,5 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
+import { HashRouter } from "react-router-dom";
 import ContactPage from "./components/ContactPage/ContactPage.js";
 import ScrollToTop from "./components/Effects/ScrollToTop.js";
 import LandingPage from "./components/LandingPage/LandingPage.js";
@@ -12,7 +13,7 @@ const RouteSwitch = () => {
     return navRef.current.clientHeight;
   };
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Nav navRef={navRef} />
       <ScrollToTop />
       <Routes>
@@ -23,7 +24,7 @@ const RouteSwitch = () => {
           element={<Projects navHeight={getNavHeight} />}
         />
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 };
 
