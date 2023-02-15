@@ -4,7 +4,7 @@
   gap: calc(var(--gap) * 2);
   width: 100%;
   height: 100%;
-  justify-content: end;
+  justify-content: flex-end;
   flex-wrap: wrap;
 }
 
@@ -13,7 +13,7 @@
   .contact-box {
     flex-direction: column;
     flex-wrap: nowrap;
-    align-items: end;
+    align-items: flex-end;
     justify-content: center;
   }
 }

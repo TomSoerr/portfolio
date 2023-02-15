@@ -1,4 +1,27 @@
-@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@300;600&family=Krona+One&display=swap");
+@font-face {
+  font-display: swap;
+  font-family: "Hanken Grotesk";
+  font-style: normal;
+  font-weight: 300;
+  src: url("./fonts/hanken-grotesk-v5-latin-300.woff2") format("woff2"),
+    url("./fonts/hanken-grotesk-v5-latin-300.woff") format("woff");
+}
+@font-face {
+  font-display: swap;
+  font-family: "Hanken Grotesk";
+  font-style: normal;
+  font-weight: 600;
+  src: url("./fonts/hanken-grotesk-v5-latin-600.woff2") format("woff2"),
+    url("./fonts/hanken-grotesk-v5-latin-600.woff") format("woff");
+}
+@font-face {
+  font-display: swap;
+  font-family: "Krona One";
+  font-style: normal;
+  font-weight: 400;
+  src: url("./fonts/krona-one-v14-latin-regular.woff2") format("woff2"),
+    url("./fonts/krona-one-v14-latin-regular.woff") format("woff");
+}
 
 :root {
   --h-2: 1.618rem;
@@ -13,10 +36,8 @@
   --border-radius: 0px;
   --background-color: hsl(285, 40%, 98%);
   --color: rgb(0, 0, 0);
-  --page-margin: 5rem; /* no % allowed */
-  /* space between element and a outer element */
+  --page-margin: 5rem;
   --margin: 2rem;
-  /* space between to siblings */
   --gap: 1rem;
   --nav-height: 5rem;
   --scale: scale(1.05);
@@ -117,6 +138,11 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: var(--background-color);
+}
+
+main {
+  overflow-x: hidden;
+  position: relative;
 }
 
 #scroll-to {
@@ -226,6 +252,5 @@ a {
 }
 
 /* TODO:
-- Github und live preview auch bei overlay
 - Schriften Local
 */
