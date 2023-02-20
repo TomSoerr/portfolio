@@ -129,7 +129,7 @@ const data = {
         "Dieses Plakat war ein Auftrag von meinen Lehrer:innen zum Thema Corporate Design. Zur Aufgabenstellung gehörte ein Briefing des Kunden sowie konkrete Angaben zum Design und Layout. Das Ziel war es außerdem, dass das Plakat visuell zu den anderen Plakaten der Ausstellung passt.",
         "Zu Beginn suchte ich mir passend zum Thema eine Rebellin aus.  Im nächsten Schritt habe ich für die Logoentwicklung ein Moodboard erstellt, dann mithilfe einer morphologischen Matrix erste Skizzen für das Logo gezeichnet und diese dann in Illustrator weiter ausgeführt. Mit dem von mir gesammelten Material habe ich das Plakat in InDesign zusammengestellt und für die Bildbearbeitung Photoshop benutzt.",
       ],
-      imageLink: "/img/rebellinnen-plakat.pdf",
+      imageLink: process.env.PUBLIC_URL + "/img/rebellinnen-plakat.pdf",
       image: "/img/rebellinnen.jpg",
       icons: [],
     },
