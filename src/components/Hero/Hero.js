@@ -9,7 +9,11 @@ const Hero = (props) => {
       <img
         alt="Background"
         className="hero-bg"
-        src={props.bgImg ? `./img/bg-${props.bgImg}.svg` : "./img/bg-1.svg"}
+        src={
+          props.bgImg
+            ? process.env.PUBLIC_URL + `/img/bg-${props.bgImg}.svg`
+            : process.env.PUBLIC_URL + "/img/bg-1.svg"
+        }
       ></img>
       <header className="hero">
         <div className="filter"></div>
@@ -33,7 +37,7 @@ const Hero = (props) => {
             }}
           >
             <img
-              src="./img/less.svg"
+              src={process.env.PUBLIC_URL + "/img/less.svg"}
               className="hero-icon"
               alt="show more icon"
             />

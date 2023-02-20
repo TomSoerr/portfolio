@@ -14,9 +14,10 @@ nav#nav {
 
 nav#nav svg {
   color: var(--background-color);
-  margin: calc(var(--gap) / 2) 0;
-  height: calc(var(--nav-height) - var(--gap));
+  margin: calc(var(--gap) / 1.2) 0;
+  height: calc(var(--nav-height) - (var(--gap) / 1.2) * 2);
   width: auto;
+  display: block;
 }
 
 nav#nav ul {
@@ -61,7 +62,7 @@ nav#nav a.nav-active {
   }
 
   nav#nav ul li {
-    flex: 1 0 0;
+    flex: 1 1 auto;
   }
 
   nav#nav {
