@@ -6,7 +6,7 @@ function NavItem(props) {
   return (
     <li>
       <Link className={props.className} to={`/${props.url}`}>
-        {props.name}
+        <div>{props.name}</div>
       </Link>
     </li>
   );

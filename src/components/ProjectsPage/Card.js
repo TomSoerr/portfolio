@@ -9,7 +9,7 @@ const Image = (props) => {
   return (
     <a href={props.link} target="_blank" rel="noopener noreferrer">
       <img
-        src={props.image}
+        src={process.env.PUBLIC_URL + props.image}
         alt="Picure of the project"
         className="picture"
       ></img>
@@ -57,7 +57,11 @@ const Overlay = (props) => {
 const Icon = (props) => {
   return (
     <a href={props.link} target="_blank" rel="noopener noreferrer">
-      <img src={props.icon} alt={props.iconAlt} className="icons"></img>
+      <img
+        src={process.env.PUBLIC_URL + props.icon}
+        alt={props.iconAlt}
+        className="icons"
+      ></img>
     </a>
   );
 };
@@ -73,7 +77,11 @@ const More = (props) => {
 const Less = (props) => {
   return (
     <button className="less" onClick={props.onClick}>
-      <img className="less-icon" src="./img/less.svg" alt="less"></img>
+      <img
+        className="less-icon"
+        src={process.env.PUBLIC_URL + "/img/less.svg"}
+        alt="less"
+      ></img>
     </button>
   );
 };
