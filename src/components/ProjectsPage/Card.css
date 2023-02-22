@@ -45,8 +45,8 @@
 
 .project-card .icons {
   height: auto;
-  width: calc(var(--nav-height) / 3);
-  min-width: calc(var(--nav-height) / 3);
+  width: calc(var(--nav-height) / 4);
+  min-width: calc(var(--nav-height) / 4);
   display: block;
 }
 
