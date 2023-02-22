@@ -78,8 +78,10 @@ img {
   height: auto;
 }
 
-button,
-.button {
+/* reset button useragent styling */
+.button,
+.big-button,
+.less {
   appearance: none;
   background: none;
   font-family: inherit;
@@ -98,8 +100,7 @@ button,
   display: block;
 }
 
-:not(.project-card-content):not(.project-card-overlay) > button,
-:not(.project-card-overlay) .button {
+.big-button {
   background-color: var(--secondary-color);
   color: var(--background-color);
   font-size: var(--h-2);
@@ -108,17 +109,13 @@ button,
   border: none;
 }
 
-button:hover,
-button:focus,
 .button:hover,
 .button:focus {
   background-color: var(--hover-color);
 }
 
-:not(.project-card-content):not(.project-card-overlay) > button:hover,
-:not(.project-card-content):not(.project-card-overlay) > button:focus,
-.button:focus,
-.button:hover {
+.big-button:hover,
+.big-button:focus {
   transform: var(--scale);
   background-color: var(--secondary-color);
   filter: hue-rotate(20deg) brightness(1.2);

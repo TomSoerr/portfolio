@@ -6,6 +6,7 @@ import LandingPage from "./components/LandingPage/LandingPage.js";
 import Nav from "./components/Nav/Nav.js";
 import Projects from "./components/ProjectsPage/Projects.js";
 import { useRef } from "react";
+import FormPage from "./components/FormPage/FormPage.js";
 
 const RouteSwitch = () => {
   const navRef = useRef(null);
@@ -23,6 +24,7 @@ const RouteSwitch = () => {
           path="/projects"
           element={<Projects navHeight={getNavHeight} />}
         />
+        <Route path="/form" element={<FormPage />} />
       </Routes>
     </HashRouter>
   );
