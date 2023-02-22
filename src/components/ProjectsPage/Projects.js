@@ -15,7 +15,7 @@ const CTA = () => {
         <div>Interessiert an einer Zusammenarbeit?</div>
         <div>Kontaktieren Sie mich jetzt.</div>
       </h2>
-      <Link className="button" to="/contact">
+      <Link className="big-button" to="/contact">
         Kontakt
       </Link>
     </article>

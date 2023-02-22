@@ -15,7 +15,7 @@ const Hero = (props) => {
             : process.env.PUBLIC_URL + "/img/bg-1.svg"
         }
       ></img>
-      <header className="hero">
+      <header className={props.class ? `${props.class} hero` : "hero"}>
         <div className="filter"></div>
         <WritingEffect text={props.headline}></WritingEffect>
         {props.box && props.onlyElement && (

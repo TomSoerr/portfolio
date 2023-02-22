@@ -6,7 +6,7 @@ const ContactElement = (props) => {
   return (
     <li>
       <a
-        className="button"
+        className="big-button"
         href={props.link}
         target="_blank"
         rel="noopener noreferrer"

@@ -49,7 +49,7 @@ const LandingPage = (props) => {
             </Section>
             <Section>
               <h2>Erfahren Sie mehr über meine Fähigkeiten und Projekte</h2>
-              <Link className="button" to="/projects">
+              <Link className="big-button" to="/projects">
                 Projekte
               </Link>
             </Section>
