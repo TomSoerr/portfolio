@@ -73,7 +73,7 @@ const data = {
       id: uuid(),
       name: "Python",
       details:
-        "Meine gesammelten Python Erfahrungen durch eine Facharbeit, ein YoloV5 Modell, ein Macro Recorder und etwas Django.",
+        "Meine gesammelten Python Erfahrungen durch eine Facharbeit, ein YoloV5 Modell, einen Macro Recorder und etwas Django.",
       moreDetails: [
         "Mit einem Kurs vom „freeCodeCamp“ (siehe Zertifikat auf Github) habe ich mir die Grundlagen von Python beigebracht und anschließend Projekte umgesetzt.",
         "Für eine Facharbeit in der Schule, programmierte ich ein neuronales Netz, welches handgeschrieben Zahlen erkennt. Unterstützend habe ich mit dem Buch von Tariq Rashid gearbeitet. Das Netz wurde an der MNIST-Datenbank getestet und hatte eine Fehlerquote von nur 3 %.",
@@ -131,7 +131,13 @@ const data = {
       ],
       imageLink: process.env.PUBLIC_URL + "/img/rebellinnen-plakat.pdf",
       image: "/img/rebellinnen.jpg",
-      icons: [],
+      icons: [
+        {
+          iconLink: process.env.PUBLIC_URL + "/img/rebellinnen-plakat.pdf",
+          icon: "/img/live-preview.svg",
+          iconAlt: "Live preview icon",
+        },
+      ],
     },
 
     {
