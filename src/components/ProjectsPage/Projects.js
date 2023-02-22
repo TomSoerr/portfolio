@@ -30,36 +30,38 @@ class Projects extends Component {
 
   render() {
     return (
-      <main>
-        <Hero navHeight={this.props.navHeight} headline="Meine Projekte" />
-        <Element name="content">
-          <article id="scroll-to" className="project-card-container">
-            {[...this.state.projects].map((project, index) => {
-              let name = project.name;
-              let details = project.details;
-              let image = project.image;
-              let imageLink = project.imageLink;
-              let icons = project.icons;
-              let id = project.id;
-              let moreDetails = project.moreDetails;
-              return (
-                <Card
-                  key={index}
-                  name={name}
-                  details={details}
-                  image={image}
-                  imageLink={imageLink}
-                  icons={icons}
-                  id={id}
-                  moreDetails={moreDetails}
-                />
-              );
-            })}
-          </article>
-        </Element>
-        <CTA />
-        <Footer></Footer>
-      </main>
+      <div className="wrapper">
+        <main>
+          <Hero navHeight={this.props.navHeight} headline="Meine Projekte" />
+          <Element name="content">
+            <article id="scroll-to" className="project-card-container">
+              {[...this.state.projects].map((project, index) => {
+                let name = project.name;
+                let details = project.details;
+                let image = project.image;
+                let imageLink = project.imageLink;
+                let icons = project.icons;
+                let id = project.id;
+                let moreDetails = project.moreDetails;
+                return (
+                  <Card
+                    key={index}
+                    name={name}
+                    details={details}
+                    image={image}
+                    imageLink={imageLink}
+                    icons={icons}
+                    id={id}
+                    moreDetails={moreDetails}
+                  />
+                );
+              })}
+            </article>
+          </Element>
+          <CTA />
+        </main>
+        <Footer />
+      </div>
     );
   }
 }
