@@ -108,8 +108,6 @@
   height: 30vh;
 }
 
-/*  */
-
 #contact-form label:focus-within,
 #contact-form button:hover,
 #contact-form button:focus {
