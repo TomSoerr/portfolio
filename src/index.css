@@ -33,6 +33,7 @@
   --hover-color: var(--shadow-color);
   --border-color: rgb(0, 0, 0);
   --secondary-color: rgb(104, 55, 218);
+  --secondary-color-hover: #b433f0;
   --border-radius: 0px;
   --background-color: hsl(285, 40%, 98%);
   --color: rgb(0, 0, 0);
@@ -117,8 +118,7 @@ img {
 .big-button:hover,
 .big-button:focus {
   transform: var(--scale);
-  background-color: var(--secondary-color);
-  filter: hue-rotate(20deg) brightness(1.2);
+  background-color: var(--secondary-color-hover);
   color: var(--background-color);
 }
 
