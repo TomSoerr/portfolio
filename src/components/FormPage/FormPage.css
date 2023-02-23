@@ -102,9 +102,6 @@
 
 #contact-form textarea {
   resize: vertical;
-}
-
-#contact-form label:last-of-type {
   height: 30vh;
 }
 
