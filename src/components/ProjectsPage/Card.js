@@ -69,7 +69,7 @@ const Icon = (props) => {
 const More = (props) => {
   return (
     <button className="more button" onClick={props.onClick}>
-      Mehr erfahren
+      Weiterlesen
     </button>
   );
 };
