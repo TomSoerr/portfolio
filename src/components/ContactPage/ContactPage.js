@@ -26,20 +26,12 @@ const ContactPage = (props) => {
           <ul className="contact-box">
             {[
               {
-                platform: "Xing",
-                link: "https://www.xing.com/profile/Tom_Soerr/cv",
+                platform: "Impressum",
+                link: "https://tomsoerr.github.io/#/impressum",
               },
               {
-                platform: "GitHub",
-                link: "https://github.com/TomSoerr",
-              },
-              {
-                platform: "LinkedIn",
-                link: "https://www.linkedin.com/in/tom-soerr-b5707a265/",
-              },
-              {
-                platform: "E-Mail",
-                link: "mailto:tomix2004@gmail.com",
+                platform: "Kontakt",
+                link: "https://tomsoerr.github.io/#/kontakt",
               },
             ].map((contact, index) => (
               <ContactElement
