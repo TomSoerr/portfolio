@@ -19,6 +19,7 @@ Um die Ladezeiten zwischen den Unterseiten zu minimieren, habe ich mich für ein
 
 ## Links
 
+- [Imprint](https://tomsoerr.github.io/#/impressum)
 - [Live Preview](https://tomsoerr.github.io/portfolio/)
 
 ## Notes
